@@ -1,0 +1,1355 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: auto;
+}
+
+h1{
+  text-transform: uppercase;
+}
+
+.topnav {
+  background-color: #fff;
+  position: fixed;
+  z-index: 1;
+  text-align: left;
+  width: 100vw;
+  padding-bottom: 18px;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: grey;
+  text-align: center;
+  padding: 10px 12px 0 5px;
+  text-decoration: none;
+  font-size: 15px;
+  font-style: sans-serif;
+}
+
+.topnav a:hover {
+  transition: 0.2s ease-in-out;
+  color: #cc0000;
+}
+
+.navtext{
+  margin-top: 12px;
+}
+
+.logo-mm img{
+  width: 150px;
+  height: auto;
+  background: white;
+  margin: 5px 0px 0px 10px;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+.icon{
+  margin-right: 20px;
+}
+
+@media screen and (max-width: 992px) {
+  .topnav{
+    width: 100vw;
+  }
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    margin-top: 10px;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+
+  .login{
+    float: right;
+  }
+}
+
+.navtext{
+  margin-left: 0.9em;
+}
+
+@media (min-width: 860px) {
+    .login{
+      float: right;
+  	}
+  	.topnav a:last-child {float: right;}
+  }
+
+ /*From here we start mobile first design for maximum of 860 px
+
+ Container of the section Right Left*/
+	#rightleft{
+		display: flex;
+		min-height: 100vh;
+	}
+	/*Container of the section to display 80% width content in center*/
+	#rlcontainer{
+		width: 100%;
+		display: flex;
+		margin: auto;
+		padding: 30px;
+		flex-direction: column;
+	}
+/*	Contains all the content of the text in right
+*/	.rightText{
+		flex: 1;
+		padding-bottom: 40px;
+		display: flex;
+	}
+	.rtcontainer{
+		margin: auto;
+		width: 95%;
+	}
+	.rtcontainer > p {
+		text-align: justify;
+		font-family:  'Open Sans', sans-serif;
+		color:#666;
+		font-size: 15px;
+	}
+	.rtcontainer > h1 {
+		font-family: 'proxima-nova', sans-serif;
+		color: green;
+		font-size: 24px;
+		text-align: center;
+	}
+
+	/*Contains all the content of the image in left*/
+
+	.leftImage{
+		flex: 1;
+		margin:auto;
+		display: flex;
+	}
+
+	.leftImage > img {
+		width: 100%;
+		margin: auto;
+		max-height: 70vh;
+	}
+
+
+
+@media only screen and (min-width: 860px) {
+	/* Container of the section Right Left*/
+	#rightleft{
+		display: flex;
+		min-height: 100vh;
+	}
+	#rlcontainer{
+		width: 90%;
+		display: flex;
+		margin: auto;
+		padding: 30px;
+		flex-direction: row;
+	}
+/*	Contains all the content of the text in right */
+	.rightText{
+		flex: 1;
+		order: 1;
+	}
+	.rtcontainer{
+		width: 100%;
+		margin-right: 20px;
+	}
+	.rtcontainer > p {
+		text-align: justify;
+		font-family:  'Open Sans', sans-serif;
+		color:#666;
+		font-size: 16px;
+	}
+	.rtcontainer > h1 {
+		font-family: 'proxima-nova', sans-serif;
+		color: green;
+		font-size: 36px;
+		text-align: left;
+	}
+/*	Contains all the content of the image in left
+*/
+	.leftImage{
+		order: 2;
+	}
+	.leftImage > img {
+
+		max-height: 600px;
+	}
+}
+
+
+ /*From here we start mobile first design for maximum of 860 px*/
+	#benefits{
+		display: flex;
+		min-height: 100vh;
+		flex-direction: column;
+		padding-top: 60px;
+		padding-bottom: 60px;
+	}
+	#headText{
+		flex:1;
+		text-align: center;
+		margin: auto;
+		font-family: 'proxima-nova', sans-serif;
+		color: green;
+		font-size: 32px;
+	}
+	#row1{
+		flex:3;
+		display: flex;
+		width: 80%;
+		margin: auto;
+		flex-wrap: wrap;
+		justify-content: space-around;
+	}
+	.benefitBox{
+		width: 50%;
+		text-align: center;
+		margin: .6em; /* important */
+		padding: .6em;
+	}
+  .benefitBox a{
+    text-decoration: none;
+  }
+	.benefitsText{
+		text-align: center;
+		font-family:  'Open Sans', sans-serif;
+		color:#666;
+		font-size: 12px;
+	}
+	.benefitsTitle{
+		text-align: center;
+		font-family:  'Open Sans', sans-serif;
+		color:#444;
+		font-size: 18px;
+	}
+
+
+@media only screen and (min-width: 860px) {
+	#benefits{
+		display: flex;
+		min-height: 100vh;
+		flex-direction: column;
+		padding-top: 60px;
+		padding-bottom: 60px;
+	}
+	#headText{
+		flex:1;
+		text-align: center;
+		margin: auto;
+		font-family: 'proxima-nova', sans-serif;
+		color: green;
+		font-size: 36px;
+	}
+	#row1{
+		flex:3;
+		display: flex;
+		max-width: 80%;
+		margin: auto;
+		flex-wrap: wrap;
+		justify-content: space-around;
+	}
+	.benefitBox{
+		width: 25%;
+		text-align: center;
+		margin: .6em; /* important */
+		padding: .6em;
+	}
+	.benefitsText{
+		text-align: center;
+		font-family:  'Open Sans', sans-serif;
+		color:#666;
+		font-size: 12px;
+	}
+	.benefitsTitle{
+		text-align: center;
+		font-family:  'Open Sans', sans-serif;
+		color:#444;
+		font-size: 18px;
+	}
+}
+
+/* Container of the section Right Left*/
+	#speaker{
+		display: flex;
+		padding-top: 60px;
+		padding-bottom: 10px;
+	}
+	#pcontainer{
+		width:80%;
+		min-height: 100vh;
+		margin: auto;
+		display: flex;
+		flex-direction: column;
+	}
+	#speakerTitle{
+		text-align: center;
+	}
+	
+	#speakerTitle > h1{
+		font-family: 'proxima-nova', sans-serif;
+		color: #cc0000;
+		font-size: 24px;
+	}
+	#speakerBody{
+		flex: 6;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-around;
+	}
+	.speakerBox{
+		width: 50%;
+		text-align: center;
+		margin: .6em; /* important */
+		padding: .6em;
+		display: flex;
+		flex-direction: column;
+	}
+	.speakerText{
+		text-align: center;
+		font-family:  'Open Sans', sans-serif;
+		color:#666;
+		font-size: 12px;
+	}
+	.speakerHead{
+		text-align: center;
+		font-family:  'Open Sans', sans-serif;
+		color:#444;
+		font-size: 18px;
+		font-weight: bold;
+	}
+/*	This is the extra section added to test the code
+*/	#below{
+		background-color: #111;
+		height: 100vh;
+	}
+	.speakerImage{
+		flex: 2;
+		margin: auto;
+	}
+	.single-column > img {
+		border-radius: 50%;
+		max-height: 200px;
+		min-height: 200px;
+	}
+	.speakerQuote{
+		flex: 1;
+		margin:auto;
+	}
+
+@media only screen and (min-width: 860px) {
+	/* Container of the section Right Left*/
+	.speakerBox{
+		width: 20%;
+	}
+	
+	.speaker{
+	    max-height: 100vh;
+	}
+
+  #speakerTitle h1{
+    font-size: 36px;
+  }
+}
+
+/* Container of the section Right Left*/
+	#mapRightLeft{
+		display: flex;
+		min-height: 100vh;
+	}
+	/*Container of the section to display 80% width content in center*/
+	#maprlcontainer{
+		width: 80%;
+		display: flex;
+		margin: auto;
+		padding: 30px;
+		flex-direction: column;
+	}
+
+/*	Contains all the content of the text in right
+*/	.mapRightSection{
+		flex: 1;
+		padding-bottom: 40px;
+		display: flex;
+	}
+	.maprscontainer{
+		margin: auto;
+		width: 85%;
+		display: flex;
+		flex-direction: column;
+	}
+	.scheduleContainer > p {
+		text-align: center;
+		font-family:  'Open Sans', sans-serif;
+		color:#444;
+		font-size: 36px;
+		font-weight: bold;
+	}
+	.scheduleContainer >h4 {
+		text-align: center;
+		font-family:  'Open Sans', sans-serif;
+		color:#444;
+		font-size: 24px;
+		font-weight: bold;
+    padding-top: 20px;
+	}
+	.maprscontainer > h1 {
+		font-family: 'proxima-nova', sans-serif;
+		color: white;
+		font-size: 24px;
+		text-align: center;
+	}
+
+
+	/*Contains all the content of the image in left*/
+
+	.mapLeftContainer{
+		flex: 1;
+		margin:auto;
+		display: flex;
+		flex-direction: column;
+	}
+	.mapLeftContainer > h1 {
+		font-family: 'proxima-nova', sans-serif;
+		color: white;
+		font-size: 24px;
+		text-align: center;
+		margin:auto;
+	}
+	.mapLeftContainer > img {
+		height: auto;
+		width: 80%;
+		margin: auto;
+	}
+
+/*	This is the extra section added to test the code
+*/	#below{
+		background-color: #111;
+		height: 100vh;
+	}
+
+/*	This is for putting an image in the background*/
+	#mapRightLeft{
+			z-index: 1;
+		    min-height: 100vh;
+		    width: 100%;
+		    /*overflow: auto;  */
+		    background: rgba(255, 255, 255, 0.8); /*can be anything, of course*/
+		}
+		#mapOverlay{
+		background-image: url("img/d1%20(4.html).jpg");
+    background-attachment: fixed;
+		  background-position: center;
+		  background-repeat: no-repeat;
+		  background-size: cover;
+		  background-blend-mode: overlay;
+		}
+
+
+		.scheduleContainer{
+			height: auto;
+			width: 80%;
+			background-color: white;
+			border-radius: 10px;
+			text-align: center;
+			margin: auto;
+		}
+@media only screen and (min-width: 860px) {
+	/* Container of the section Right Left*/
+	#mapRightLeft{
+		display: flex;
+		min-height: 100vh;
+	}
+	#maprlcontainer{
+		width: 80%;
+		display: flex;
+		margin: auto;
+		padding: 30px;
+		flex-direction: row;
+	}
+/*	Contains all the content of the text in right */
+
+	.mapRightSection{
+		flex: 1;
+		order: 2;
+	}
+	.maprscontainer{
+		width: 80%;
+		margin-right: 0;
+	}
+	.scheduleContainer > p {
+		font-size: 10px;
+	}
+	.maprscontainer > h1 {
+		font-family: 'proxima-nova', sans-serif;
+		color: white;
+		font-size: 36px;
+		text-align: center;
+		padding-bottom: 20px;
+	}
+/*	Contains all the content of the image in left
+*/
+	.mapLeftContainer{
+		flex: 1;
+		margin:auto;
+		order: 1;
+	}
+	.mapLeftContainer > img {
+		height: auto;
+		width: 80%;
+		max-height: 600px;
+	}
+	.mapLeftContainer > h1 {
+		font-family: 'proxima-nova', sans-serif;
+		color: white;
+		font-size: 36px;
+		text-align: center;
+	}
+
+	.scheduleContainer{
+		height: auto;
+		width: 60%;
+		background-color: green;
+		border-radius: 10px;
+		text-align: center;
+		margin: auto;
+	}
+
+	/*	This is the extra section added to test the code */
+	#below{
+		background-color: #111;
+		height: 100vh;
+	}
+}
+
+
+/*Container of the section Right Left*/
+ #registerSection{
+		display: flex;
+		min-height: 100vh;
+		flex-direction:column;
+	}
+	/*Container of the section to display 80% width content in center*/
+
+	#registerSection{
+			z-index: 1;
+/* 		  width: 100%; */
+      min-height: 80vh;
+		  background: green; /*can be anything, of course*/
+			padding-top: 40px;
+			padding-bottom: 40px;
+		}
+		#registerOverlay{
+      background: url("img/d1%20(4.html).jpg");
+		  background-position: center;
+		  background-attachment: fixed;
+		  background-repeat: no-repeat;
+		  background-size: cover;
+		  background-blend-mode: overlay;
+		}
+
+		#registerContainer{
+			height: auto;
+			width: 90%;
+			background-color: white;
+			border-radius: 10px;
+			text-align: center;
+			margin: auto;
+			box-shadow: 0px 10px 60px 0px #000;
+			padding-top: 80px;
+			padding-bottom: 40px;
+			margin-top:40px;
+		}
+		.methodBox{
+			width: 100%;
+			text-align: center;
+			margin: .6em; /* important */
+			padding: .6em;
+		}
+
+    .methodBox a{
+      text-decoration: none;
+    }
+		.methodText{
+			text-align: center;
+			font-family:  'Open Sans', sans-serif;
+			color:#666;
+			font-size: 12px;
+		}
+		.methodTitle{
+			text-align: center;
+			font-family:  'Open Sans', sans-serif;
+			color:white;
+			font-size: 18px;
+			background: green;
+			padding: 15px;
+			border-radius: 19px;
+			/*! width: 100%; */
+		}
+		#registerTitle > h1 {
+		font-family: 'proxima-nova', sans-serif;
+		color: green;
+		font-size: 24px;
+		text-align: center;
+		margin:auto;
+	}
+	#below{
+		background-color: #111;
+		height: 100vh;
+	}
+@media only screen and (min-width: 860px) {
+	/* Container of the section Right Left*/
+
+	#registerContainer{
+		width: 45%;
+	}
+	#registerSection{
+	    flex-direction:row;
+	}
+	/*	This is the extra section added to test the code */
+	#below{
+		background-color: #111;
+		height: 100vh;
+	}
+	#registerTitle > h1 {
+		font-family: 'proxima-nova', sans-serif;
+		color: green;
+		font-size: 36px;
+		text-align: center;
+		margin:auto;
+	}
+}
+
+	#benefits1{
+		display: flex;
+		flex-direction: column;
+	}
+	#headText1{
+		flex:1;
+		text-align: center;
+		font-family: 'proxima-nova', sans-serif;
+		color: #333;
+		font-size: 36px;
+		font-weight: bolder;
+	}
+	#row11{
+		flex:3;
+		display: flex;
+		max-width: 80%;
+		margin: auto;
+		flex-wrap: wrap;
+		justify-content: space-around;
+	}
+	.benefitBox1{
+		width: 50%;
+		text-align: center;
+		margin: .6em; /* important */
+		padding: .6em;
+	}
+	.benefitsText1{
+		text-align: center;
+		font-family:  'Open Sans', sans-serif;
+		color:#666;
+		font-size: 12px;
+	}
+	.benefitsTitle1{
+		text-align: center;
+		font-family:  'Open Sans', sans-serif;
+		color:#444;
+		font-size: 18px;
+		font-weight: bold;
+	}
+
+
+@media only screen and (min-width: 860px) {
+	#benefits1{
+		display: flex;
+		min-height: 100vh;
+		flex-direction: column;
+		padding-top: 60px;
+		padding-bottom: 60px;
+	}
+	#headText1{
+		flex:1;
+		text-align: center;
+		margin: auto;
+		font-family: 'proxima-nova', sans-serif;
+		color: #333;
+		font-size: 36px;
+	}
+	#row11{
+		flex:3;
+		display: flex;
+		min-width: 60%;
+		margin: auto;
+		flex-wrap: wrap;
+		justify-content: space-around;
+	}
+	.benefitBox1{
+		width: 25%;
+		text-align: center;
+	}
+	.benefitsText1{
+		text-align: center;
+		font-family:  'Open Sans', sans-serif;
+		color:#666;
+		font-size: 12px;
+	}
+	.benefitsTitle1{
+		text-align: center;
+		font-family:  'Open Sans', sans-serif;
+		color:#444;
+		font-size: 18px;
+		font-weight: bold;
+	}
+}
+
+/*From here we start mobile first design for maximum of 860 px
+ Container of the section Right Left*/
+
+	#rightleftevent{
+		display: flex;
+		min-height: 100vh;
+	}
+	#rlcontainerevent{
+		width: 100%;
+		display: flex;
+		margin: auto;
+		padding: 30px;
+	}
+/*	Contains all the content of the text in right
+*/	.rightTextevent{
+		flex: 1;
+		display: flex;
+	}
+	.rtcontainerevent{
+		margin: auto;
+		width: 75%;
+	}
+	.rtcontainerevent > p {
+		text-align: center;
+		font-family: 'Open Sans', sans-serif;
+		color:#666;
+		font-size: 15px;
+	}
+	.rtcontainerevent > h1 {
+		font-family: 'proxima-nova', sans-serif;
+		color: #cc0000;
+        margin-bottom: 40px
+		font-size: 24px;
+		text-align: center;
+	}
+
+	/*Contains all the content of the image in left*/
+
+	.leftImageevent{
+		flex: 1;
+		margin:auto;
+		display: flex;
+	}
+
+	.leftImageevent > img {
+		width: 100%;
+		margin: auto;
+		max-height: 70vh;
+	}
+
+  #row2{
+		flex:3;
+		display: flex;
+		width: 80%;
+		margin: auto;
+		flex-wrap: wrap;
+		justify-content: space-around;
+	}
+	.eventBox{
+		width: 70%;
+		text-align: center;
+		margin: .6em; /* important */
+		padding: .6em;
+	}
+  .eventBox a{
+    text-decoration: none;
+  }
+  .eventBox img{
+    width: 180px;
+    height: auto;
+  }
+	.eventText{
+		text-align: center;
+		font-family:  'Open Sans', sans-serif;
+		color:#eee;
+		font-size: 14px;
+	}
+	.eventTitle{
+		text-align: center;
+		font-family:  'Open Sans', sans-serif;
+		color:#fff;
+		font-size: 24px;
+	}
+
+
+@media only screen and (min-width: 860px) {
+	#row2{
+		flex:3;
+		display: flex;
+		max-width: 80%;
+		margin: auto;
+		flex-wrap: wrap;
+		justify-content: space-around;
+	}
+  .rtcontainerevent{
+    margin-right: 30px;
+    width: 60%;
+  }
+  .rtcontainerevent p{
+    margin: 20px 60px 20px 60px;
+  }
+	.eventBox{
+		width: 30%;
+		text-align: center;
+		margin: .6em; /* important */
+		padding: .6em;
+	}
+  .eventBox img{
+    width: 300px;
+    height: auto;
+  }
+	.eventText{
+		text-align: center;
+		font-family:  'Open Sans', sans-serif;
+		color:#ddd;
+		font-size: 16px;
+	}
+	.eventTitle{
+		text-align: center;
+		font-family:  'Open Sans', sans-serif;
+		color:#fff;
+		font-size: 30px;
+	}
+}
+
+
+
+@media only screen and (min-width: 860px) {
+	/* Container of the section Right Left*/
+	#rightleftevent{
+		display: flex;
+		min-height: 100vh;
+	}
+	#rlcontainerevent{
+		width: 90%;
+		display: flex;
+		margin: auto;
+		padding: 30px;
+		flex-direction: row;
+	}
+/*	Contains all the content of the text in right */
+	.rightTextevent{
+		flex: 1;
+		order: 1;
+	}
+	.rtcontainerevent{
+		width: 100%;
+		margin-right: 20px;
+	}
+	.rtcontainerevent > p {
+		text-align: justify;
+		font-family:  'Open Sans', sans-serif;
+		font-size: 16px;
+	}
+	.rtcontainerevent > h1 {
+		font-family: 'proxima-nova', sans-serif;
+		font-size: 36px;
+		text-align: left;
+	}
+/*	Contains all the content of the image in left
+*/
+	.leftImageevent{
+		order: 2;
+	}
+	.leftImageevent > img {
+		max-height: 600px;
+	}
+}
+
+	#partner{
+		display: flex;
+		min-height: 100vh;
+		padding-top: 40px;
+		padding-bottom: 40px;
+	}
+	#partnercontainer{
+		width:80%;
+		min-height: 100vh;
+		margin: auto;
+		display: flex;
+		flex-direction: column;
+	}
+	#partnerTitle{
+		text-align: center;
+	}
+	#partnerTitle > h1{
+		font-family: 'proxima-nova', sans-serif;
+		color: green;
+		font-size: 24px;
+	}
+	#partnerBody{
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		flex-direction: column;
+	}
+	.partnerBox{
+		width: 53%;
+		margin: .6em;  /*important */
+		padding: .6em;
+		margin: auto;
+		margin-top: 30px;
+		flex: 1;
+	}
+/*	This is the extra section added to test the code
+*/	#below{
+		background-color: #111;
+		height: 100vh;
+	}
+
+	.partnerBox > img {
+		height:12vh;
+	}
+
+@media only screen and (min-width: 660px) {
+	/* Container of the section Right Left*/
+	.partnerBox{
+		width: 23%!important;
+		margin-top: 60px;
+		margin: 2em;
+		/*width: 50%;
+		text-align: center;
+		margin: .6em; /* important */
+		/*padding: 30px 0;
+		display: flex;
+		flex-direction: column;*/
+	}
+		.partnerBox > img {
+	 height:20vh;
+	}
+		#partnerBody{
+		flex-direction:row;
+	}
+
+  #partnerTitle h1{
+    font-size: 36px;
+  }
+}
+
+
+/*From here we start mobile first design for maximum of 860 px
+
+ Container of the section Right Left*/
+	#publications{
+		display: flex;
+		min-height: 100vh;
+		padding-top: 40px;
+		padding-bottom: 40px;
+	}
+	#pcontainer{
+		width:80%;
+		min-height: 100vh;
+		margin: auto;
+		display: flex;
+		flex-direction: column;
+	}
+	#publicationsTitle{
+		flex:1;
+		text-align: center;
+	}
+	#publicationsTitle > h1{
+		font-family: 'proxima-nova', sans-serif;
+		color: #cc0000;
+		font-size: 24px;
+	}
+	#publicationsBody{
+		flex: 6;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-around;
+	}
+	.publicationsBox{
+		width: 50%;
+		text-align: center;
+		margin: .6em; /* important */
+		padding: 30px 0;
+		display: flex;
+		flex-direction: column;
+	}
+
+  .publicationsBox a{
+    text-decoration: none;
+  }
+
+	.publicationsText{
+		text-align: justify;
+		font-family:  'Open Sans', sans-serif;
+		color:#999;
+		font-size: 12px;
+	}
+	.publicationsHead{
+		text-align: justify;
+		font-family:  'Open Sans', sans-serif;
+		color:#444;
+		font-size: 18px;
+		font-weight: bold;
+	}
+/*	This is the extra section added to test the code */
+    #below{
+		background-color: #111;
+		height: 100vh;
+	}
+	.pubImage{
+		flex: 1;
+		margin: auto;
+		width: 100%;
+		/*height: 100%;*/
+	}
+	.pubImage img {
+		max-width: 250px;
+	}
+	.pubText{
+		flex: 1;
+		margin:auto;
+	}
+	.pubText p {
+		text-align: center;
+	}
+
+@media only screen and (min-width: 860px) {
+	/* Container of the section Right Left*/
+	.publicationsBox{
+		width: 25%;
+		padding: 30px 0;
+	}
+
+  #publicationsTitle h1{
+    font-size: 36px;
+  }
+}
+
+.single-row{
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px 0 20px 0;
+}
+
+.single-column{
+  flex: 1;
+  margin: 20px;
+}
+
+.buttonsch{
+  cursor: pointer;
+  color: #333;
+  background: none;
+  border: 0px;
+  font-size: 18px;
+}
+
+.buttonsch:hover{
+  font-size: 24px;
+  color: #cc0000;
+  transition: 0.3s ease-in;
+}
+
+.buttonsch img{
+  border-radius: 1000px;
+  height: 250px;
+}
+
+.w3-center img{
+  height: 200px;
+  border-radius: 50%;
+}
+
+.w3-modal-content h2{
+  color: #cc0000;
+}
+
+.w3-modal-content p{
+  margin: 0 20px 20px 20px;
+  font-family: sans-serif;
+}
+
+.buttonsch p{
+  text-transform: uppercase;
+  padding: 0 10px;
+  font-size: 16px;
+}
+
+.button-cancel{
+  cursor: pointer;
+  background-color: red;
+  color: white;
+  border: 0px;
+  padding: 6px;
+  font-size: 20px;
+  padding-left: 15px;
+  padding-right: 15px;
+  transition: 0.3s;
+}
+
+.button-cancel:hover{
+  background-color: grey;
+  color: white;
+}
+
+.w3-modal-content{
+  text-align: center;
+}
+
+.w3-modal-content p{
+  padding: 20px;
+  text-align: justify;
+}
+
+.w3-modal-content a{
+  text-decoration: none;
+  color: #07bcd1;
+}
+
+.w3-modal-content h2{
+  text-transform: uppercase;
+  font-size: 20px;
+}
+
+.cancelx{
+  width: 0.2em;
+  height: 0.1em;
+  padding-left: 90%;
+  font-size: 2em;
+  color: #ccc;
+  cursor: pointer;
+  padding-bottom: 0;
+  transition: 0.2s;
+}
+
+.cancelx:hover{
+  color: red;
+}
+
+.container{
+  padding: 10px;
+}
+
+.center{
+  text-align: center;
+}
+
+.center img{
+  width: 200px;
+  height: 200px;
+}
+
+.forgot{
+  padding-bottom: 30px;
+  text-align: center;
+}
+
+@media (min-width: 992px) {
+  .buttonsch img{
+    border-radius: 50%;
+    height: 200px;
+  }
+
+  .buttonsch p{
+    font-size: 18px;
+  }
+
+  .w3-center img{
+    height: 200px;
+    border-radius: 50%;
+  }
+
+  .cancelx{
+    padding-left: 94.5%;
+  }
+}
+
+.footer{
+    text-align: center;
+    height: 100px;
+    background: #cf0000;
+    color: white;
+    text-decoration: none;
+    display:flex;
+    flex-direction: column;
+    padding: 5px;
+}
+.footer p{
+    font-size: 16px;
+    margin:auto;
+}
+.footerIcons{
+    margin:auto;
+}
+
+.footer i{
+    padding: 0 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 20px;
+}
+@media (min-width: 860px) {
+    .footer{
+        text-align: center;
+        height: 75px;
+        background: #0e8e28;
+        color: white;
+        text-decoration: none;
+        display:flex;
+        flex-direction: row;
+    }
+}
+
+    .main-box{
+      min-height:100vh;
+      padding: 20px;
+      display:flex;
+    }
+
+    .outer-box{
+      box-shadow: 0px 5px 20px -5px grey;
+      border-radius: 12px;
+      min-width:80vw;
+      min-height:80vh;
+      background-color:#fff;
+      margin:auto;
+      text-align:center;
+    }
+
+    .outer-box h1{
+      padding-top: 40px;
+      font-family: Helvetica, sans-serif;
+    }
+
+    .container-box{
+      justify-content: space-between;
+      display: flex;
+    }
+
+    .container-part{
+      flex-basis: 50%;
+      box-sizing: border-box;
+    }
+
+    .container-part form{
+      padding-bottom: 20px;
+      display:flex;
+      flex-direction: column;
+      margin:16px;
+    }
+
+    .container-part input{
+      margin: 16px;
+      padding:12px;
+    }
+
+    .container-part textarea{
+      margin: 16px;
+      padding: 12px;
+      padding-bottom: 70px;
+      font-family:Helvetica;
+    }
+
+    #map-container{
+      box-shadow: 0px 2px 4px grey;
+      height: 200px;
+      width: 500px;
+      margin:30px;
+    }
+
+    .details{
+      font-size: 13px;
+      display: flex;
+      margin: 20px;
+    }
+
+    .details > div{
+      flex: 1;
+ 
+    }
+
+    .button-edit{
+      background-color: #00695c;
+      border: none;
+      color: white;
+      padding: 12px 20px;
+      text-align: center;
+      text-decoration: none;
+            margin: 16px;
+
+      margin-bottom: 20px;
+      cursor: pointer;
+      border-radius: 5px;
+      background-color: green;
+      transition: 0.5s;
+    }
+
+    .button-edit:hover{
+      background-color: #fff;
+			color: green;
+			border: 2px solid green;
+    }
+    input[type=text] , textarea{
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: 3px solid #ccc;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    outline: none;
+}
+
+input[type=text]:focus {
+    border: 3px solid #555;
+}
+ textarea:focus{
+    border: 3px solid #555;
+
+}
+    @media (max-width: 990px) {
+      .container-box{
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+      }
+
+      #map-container{
+        margin-left: 10%;
+        height: 200px;
+        width: 80%;
+      }
+
+      .details{
+        font-size: 13px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        
+      margin:10px;
+      }
+    }
+

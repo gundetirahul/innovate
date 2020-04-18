@@ -1,0 +1,994 @@
+<!DOCTYPE html>
+<html>
+
+<!-- Mirrored from makermela.com/ by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 17 Apr 2020 14:59:57 GMT -->
+<head>
+<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="../use.fontawesome.com/releases/v5.2.0/css/all.css">
+<link rel="stylesheet" href="../www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="../cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="fonts/fonts.css">
+<link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+<link rel="stylesheet" href="../i.icomoon.io/public/temp/fdfcfa0175/UntitledProject/style.html">
+<link rel="stylesheet" type="text/css" href="style.css">
+
+<link rel="icon" href="img/innovate.jpeg" type="image/x-icon">
+<title>I-Innovate</title>
+<style type="text/css">
+
+.hero-image {
+background-image: url("img/d1%20(1.html).jpg");
+background-attachment: fixed;
+background-position: center;
+height: 100vh;
+background-repeat: no-repeat;
+background-size: cover;
+position: relative;
+}
+
+.hero-text {
+margin: auto;
+color: white;
+font-family: 'Open Sans', sans-serif;
+font-size: 24px;
+line-height: 1.6;
+text-align: center;
+width: 80%;
+padding-top: 10px;
+}
+.hero-text h1{
+font-size:36px;
+font-family:'Helvetica';
+}
+.overlay {
+	height: 100vh;
+	width: 100%;
+	position: absolute;
+	overflow: auto;
+	top: 0px;
+	left: 0px;
+	background:green	; /*can be anything, of course*/
+	display: flex;
+}
+.button {
+	border: none;
+	/*color: white;*/
+	padding: 11px 20px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 10px;
+	-webkit-transition-duration: 0.4s; /* Safari */
+	transition-duration: 0.4s;
+	cursor: pointer;
+	margin: auto;
+	width: 60%;
+}
+.button5 {
+	background-color: white;
+	color: green;
+	font-size: 12px;
+	border-radius: 12px;
+	letter-spacing: 1px;
+}
+.button1 {
+background-color: green;
+color: white;
+border-radius: 12px;=
+transition: 0.1s ease-in;
+font-size: 18px;
+}
+.button5:hover {
+	background-color: white;
+	color: green;
+	font-weight:bold;
+	font-size: 15px;
+}
+.button1:hover {
+	background-color: #fff;
+	color: green;
+	border: 2px solid green;
+}
+
+.button2 {
+background-color: #fff;
+color: #cc0000;
+border-radius: 12px;
+margin-top: 40px;
+transition: 0.1s ease-in;
+font-size: 15px;
+text-transform: uppercase;
+}
+
+.button2:hover {
+	background-color: #3498db;
+	color: white;
+	font-size: 18px;
+}
+
+.button3 {
+background-color: #fff;
+color: green;
+border-radius: 12px;
+margin-top: 40px;
+transition: 0.1s ease-in;
+font-size: 15px;
+text-transform: uppercase;
+}
+
+.button3:hover {
+	background-color: green;
+	color: white;
+	font-size: 12px;
+}
+
+@media only screen and (min-width: 860px) {
+.hero-text {
+	color: white;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 36px;
+	line-height: 1.0;
+	text-align: center;
+	width: 50%;
+}
+.hero-text p{
+	font-size: 42px;
+	line-height: 1.2;
+}
+.hero-text h1{
+	font-size:72px;
+	font-family:'Proxima Nova';
+	font-weight: bold;
+}
+.button{
+	font-size: 18px;
+	width: 50%;
+}
+.button5:hover {
+    font-size: 18px;
+}
+.button2:hover{
+		padding: 16px 30px;
+		font-size: 20px;
+}
+.button{
+	font-size: 15px;
+}
+.button3:hover{
+		padding: 16px 25px;
+		font-size: 20px;
+}
+}
+</style>
+
+<style type="text/css">
+		div.panel {
+		padding: 0 18px;
+		display: none;
+		background-color: white;
+		overflow: hidden;
+		}
+
+		div.panel.show {
+				display: block !important;
+		}
+		.accordion {
+				background-color: #fff;
+				color: #444;
+				cursor: pointer;
+				padding: 18px;
+				width: 100%;
+				border: none;
+				text-align: left;
+				outline: none;
+				font-size: 15px;
+				transition: 0.4s;
+				font-weight: bolder;
+		}
+		#faqs h1 {
+			text-align: center;
+			color: #fff;
+			font-size: 24px;
+			font-family:'Proxima Nova';
+			text-transform: uppercase;
+			width: 80%;
+			margin: auto;
+			margin-top: 50px;
+			letter-spacing: 1.25px;
+		}
+		.box{
+			padding: 10px;
+			width: 90%;
+			margin: auto;
+			margin-bottom: 30px;
+		}
+		.box_parent{
+			display: flex;
+			flex-wrap: wrap;
+		}
+		.active, .accordion:hover {
+				background-color: #eee;
+		}
+		.accordion:after {
+			content: '\002B';
+			color: #777;
+			font-weight: bold;
+			float: right;
+			margin-left: 5px;
+		}
+		.active:after {
+			content: "\2212";
+		}
+		#faqs{
+			min-height: 100vh;
+			padding-top: 30px;
+			padding-bottom: 30px;
+		}
+	@media only screen and (min-width: 660px) {
+		.box{
+			padding: 10px;
+			width: 40%;
+			margin: auto;
+			margin-bottom: 30px;
+		}
+		#faqs h1 {
+			font-size: 36px;
+			margin-bottom: 90px;
+		}
+	}
+</style>
+
+	<style type="text/css">
+		.iconBox p {
+			font-size: 17px;
+			text-transform: uppercase;
+			margin-top: 60px;
+		}
+		.iconBox:hover {
+			padding: 10px 10px;
+			cursor: pointer;
+		}
+		.benefitBox img{
+		height: 80px;
+		width:80px;
+	    }
+		@media only screen and (min-width: 860px){
+			.iconBox {
+				height: 300px;
+				width: 30%;
+			}
+			.icon:hover {
+			padding: 10px 10px;
+			cursor: pointer;
+		}
+		}
+	</style>
+
+<style type="text/css">
+	.partnerBox > a > img{
+		max-height:  120px;
+		max-width: 250px;
+		margin: auto;
+	}.partnerBox > a {
+		display: flex;
+	}
+</style>
+<!--<script type="text/javascript" src="snowstorm-min.js"></script>-->
+</head>
+
+<body>
+
+	<div class="topnav" id="myTopnav">
+		<a href="index.html" class="logo-mm"><img src="img/innovate.jpeg"></a>
+		<a href="#rightleft" class="navtext" style="font-family: helvetica;">About</a>
+		<a href="#benefits" class="navtext" style="font-family: helvetica;">Benefits</a>
+		<a href="#reg" class="navtext" style="font-family: helvetica;">Register</a>
+		<!-- 
+		<a href="#videos" class="navtext" style="font-family: helvetica;">Videos</a>
+		<a href="#speaker" class="navtext" style="font-family: helvetica;">Speakers</a> -->
+		<a href="#mapOverlay" class="navtext" style="font-family: helvetica;">Schedule</a>
+		<!-- <a href="events.html" class="navtext" style="font-family: helvetica;">Events</a> -->
+		<!-- <a href="http://thedarwin.in/" class="navtext" style="font-family: helvetica;">Darwin</a> -->
+		<a href="#faqs" class="navtext" style="font-family: helvetica;">FAQs</a>
+		<a href="#partner" class="navtext" style="font-family: helvetica;">Partners</a>
+		<!-- <a href="http://blog.makermela.com/" class="navtext" style="font-family: helvetica;">Blogs</a> -->
+		<!-- <a href="#" class="navtext login" style="font-family: helvetica;">Login</a> -->
+		<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+			<i class="fa fa-bars"></i>
+		</a>
+	</div>
+
+
+<!-- Section 1 -->
+<div class="hero-image">
+	<div class="overlay">
+  		<div class="hero-text">
+   	 		<h1 style="margin-bottom: 0px;">I-INNOVATE</h1>
+   	 		<h3 style="margin-top: 0px; font-size: 28px"> 25<sup>th</sup> April 2020 </h3>
+
+				<p style="font-family: 'Lobster', cursive; letter-spacing: 1px;">Telangana's I-INNOVATE An Online Hackathon</p>
+			<a href="https://forms.gle/42UsqPqhRv6Lmr7s6"><button class="button button5">REGISTER NOW</button></a>
+  		</div>
+	</div>
+</div>
+<!-- Section 1 ended-->
+
+<div id="rightleft">
+	<div id="rlcontainer">
+		<div class="rightText">
+			<div class="rtcontainer">
+
+				<h1> About Maker Mela </h1>
+
+				<p>I Innovate is an online Hackathon, people who participate in this are expected to identify problems in their locality or any other place of their concern and come up with an innovate solution.</p>
+
+				<p>If you are thinking of presenting an issue them make sure that you have answers to the below questions with respect to citizen of our nation.<p>
+				<br>
+				<p>
+						<span style="font-size: 20px;">
+						1) What kind of problems yoy have identified so far ?<br><br>
+						2) How you are addressing the problem ? <br><br>
+						3) Why have you addressed this problem ? <br><br>
+						4) Which community primarily affected by such problems? <br><br>
+						5) How are you going to solve the problem?
+						 <br>
+					</span>
+				</p>
+			</div>
+		</div>
+		<div class="leftImage">
+			<img src="img/WEB.png">
+		</div>
+	</div>
+</div>
+<!-- Section rightleft ends -->
+
+<!-- Register Section -->
+<div id="registerOverlay" style="background: url('img/boat.png') no-repeat; background-position: center; background-attachment: fixed; background-size: cover;">
+	<div id="registerSection">
+	<div id="registerContainer" style="width: 80%; background: rgb(255,255,255);">
+		<div id="registerTitle">
+			<h1>An initiative of</h1>
+		</div>
+		<div id="registerMethods" style="display: flex; max-width: 80%; margin: auto; flex-wrap: wrap; justify-content: space-around;">
+
+			<div class="partnerBox">
+				<img src="img/sict.jpeg">
+			</div>
+		</div>
+		<div id="registerTitle">
+			<h1>Organized by</h1>
+		</div>
+		<div id="registerMethods" style="display: flex; max-width: 80%; margin: auto; flex-wrap: wrap; justify-content: space-around;">
+
+			<div class="partnerBox">
+				<img src="img/publishsutra.jpeg">
+			</div>
+		</div>
+
+		<!--<div id="registerTitle">
+			<h1>Supported by</h1>
+		</div>
+		<div id="registerMethods" style="display: flex; max-width: 80%; margin: auto; flex-wrap: wrap; justify-content: space-around;">
+
+			<div class="partnerBox">
+				<img src="img/dst.png">
+			</div>
+
+			<div class="partnerBox" style="margin-left: 30px; margin-right: 50px;">
+				<img src="img/birac.jpg">
+			</div>
+		</div>-->
+		</div>
+	</div>
+
+	</div>
+
+
+	<div id="benefits">
+		<div id="headText">
+			<p>Maker Benefits</p>
+		</div>
+		<div id="row1">
+			<div class="benefitBox">
+				<img src="img/benefits/fund.png"><br><br>
+				<p class="benefitsTitle">Funding</p>
+				<p class="benefitsText">Possible funding for building project prototypes</p>
+			</div>
+			<div class="benefitBox">
+				<img src="img/benefits/mentor.png"><br><br>
+				<p class="benefitsTitle">Mentoring</p>
+				<p class="benefitsText">Six months of mentoring from global leaders and Incubation Support</p>
+			</div>
+			<div class="benefitBox">
+				<img src="img/benefits/brain.png"><br><br>
+				<p class="benefitsTitle">Pitching Ideas</p>
+				<p class="benefitsText">Get a chance to pitch ideas to high profile Investors</p>
+			</div>
+			<div class="benefitBox">
+				<img src="img/benefits/desk.png"><br><br>
+				<p class="benefitsTitle">Space for Development</p>
+				<p class="benefitsText">24x7 access to space for developing your product</p>
+			</div>
+			<div class="benefitBox">
+				<img src="img/benefits/buy.png"><br><br>
+				<p class="benefitsTitle">Product Selling</p>
+				<p class="benefitsText">Get an opportunity to sell your products live in a separate Maker shop during the the event.</p>
+			</div>
+			<div class="benefitBox">
+				<img src="img/benefits/gift-card.png"><br><br>
+				<p class="benefitsTitle">Takeaways</p>
+				<p class="benefitsText">Several takeaways from the event sponsors (Uber free rides, gift coupons and many more.)</p>
+			</div>
+			
+			<!--<div class="benefitBox">-->
+			<!--	<img src="img/benefits/living-room.png"><br><br>-->
+			<!--	<p class="benefitsTitle">Accommodation</p>-->
+				<!--<p class="benefitsText">Accommodation for 30 Makers during the event, for first 100 applicants who apply.</p>-->
+			<!--</div>-->
+		</div>
+	</div>
+<!-- Section Benefits ends -->
+
+<!-- Register Section -->
+<div id="reg">
+<div id="registerOverlay" style="background: url('img/d1%20(3.html).jpg') no-repeat; background-position: center; background-attachment: fixed; background-size: cover;">
+	<div id="registerSection">
+	<div id="registerContainer" style="background: rgb(255,255,255);">
+		<div id="registerTitle">
+			<h1>register</h1>
+		</div>
+		<div id="registerMethods" style="display: flex;max-width: 100%;margin: auto;flex-wrap: wrap;justify-content: space-around;margin-top: 10px;margin-bottom: 10px;">
+			<div class="methodBox">					
+					<a href="https://forms.gle/BmKZbbB3ZDeD9Bwp8"> <button class="button button1"> Register For Webinars</button>
+				</a>
+			</div>
+			<div class="methodBox">
+				
+					<a href="https://forms.gle/42UsqPqhRv6Lmr7s6"><button class="button button1">Register For Hackathon</button> </a>
+			</div>
+			<!--<div class="methodBox">
+				<a href="https://docs.google.com/forms/d/e/1FAIpQLSeAelNex6FbiYoUCMAJiVO-VmQ73mtVlTTzpRSg5FLiEeFXBA/viewform?c=0&w=1">
+					<i class="fas fa-3x fa-bed" style="color: #cc0000"></i><br><br>
+					<p class="methodTitle">Apply for accomodation</p>
+				</a>
+			</div>-->
+			
+		</div>
+		</div>
+	</div>
+</div>
+</div>
+<!-- 
+<style type="text/css">
+  #videos{
+    display: flex;
+    min-height: 100vh;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    flex-direction: column;
+  }
+  #videosTitle{
+    text-align: center;
+  }
+
+
+  #videosTitle > h1{
+    font-family: 'proxima-nova', sans-serif;
+    color: #cc0000;
+    font-size: 24px;
+  }
+  #videosBody {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    color: #333;
+  }
+  .videoBox{
+    margin: 2em;
+  }
+	.videoBox p{
+		font-family: sans-serif;
+		font-size: 16px;
+	}
+  #layer1{
+    width: 70%;
+    margin: auto;
+    text-align: center;
+    font-size: 24px;
+
+  }
+  #layer1 > .videoBox  {
+    margin: auto;
+    min-width: 100%;
+  }
+
+  #layer1 > .videoBox > iframe {
+    margin: auto;
+    min-width: 100%;
+    min-height: 300px;
+  }
+   @media only screen and (min-width: 660px) {
+   		#layer1 > .videoBox > iframe {
+   			min-height: 720px;
+   		}
+
+			#videosTitle h1{
+				font-size: 36px;
+			}
+   }
+  #layer2{
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 70%;
+    justify-content: space-between;
+    text-align: center;
+    font-size: 18px;
+  }
+  #layer2 > .videoBox  {
+    margin: auto;
+    min-width: 25%;
+  }
+  #layer2 > .videoBox > iframe {
+    margin: auto;
+    min-width: 100%;
+    min-height: 250px;
+  }
+  #layer3{
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+  	width: 70%;
+    justify-content: space-between;
+    text-align: center;
+    font-size: 21px;
+  }
+  #layer3 > .videoBox  {
+    margin: auto;
+    min-width: 45%;
+
+  }
+  #layer3 > .videoBox > iframe {
+    margin: auto;
+    min-width: 100%;
+    min-height: 300px;
+  }
+  @media only screen and (min-width: 660px) {
+   		#layer3 > .videoBox > iframe {
+   			min-height: 400px;
+   		}
+   }
+</style> -->
+<!-- -->
+<!-- <div id="videos">
+  <div id="videosTitle">
+    <h1>Know More About Maker Mela</h1>
+  </div>
+  <div id="videosBody">
+    <div id="layer1">
+      <div class="videoBox">
+      	<p style="font-size: 20px;">Maker Mela Aftermovie</p>
+
+      <iframe src="https://www.youtube.com/embed/DhBtTCayBH0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+      </div>
+    </div>
+
+    <div id="layer2">
+      <div  class="videoBox">
+      	<p>Inspiring Makers - Samir Somaiya</p>
+
+        <iframe src="https://www.youtube.com/embed/a58IUtH_CBk" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+      </div>
+      
+      <div  class="videoBox">
+      	<p>Testimony by Dr. Raghunath Mashelkar</p>
+
+        <iframe src="https://www.youtube.com/embed/s_Y0dNYma6g" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+      </div>
+      <div  class="videoBox">
+      	<p>Message to Makers by Jamshyd Godrej</p>
+
+        <iframe src="https://www.youtube.com/embed/VSuMivI2MEM" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+      </div>
+    </div>
+
+    <div id="layer3">
+      <div  class="videoBox">
+      	<p>What is Maker Mela ?</p>
+
+        <iframe src="https://www.youtube.com/embed/m6mQsO4X4wg" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+      </div>
+      <div  class="videoBox">
+        <p>Are you a Maker ?</p>
+        <iframe src="https://www.youtube.com/embed/bGRnBp_22Ds" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+      </div>
+    </div>
+  </div>
+</div> -->
+
+<!-- -->
+
+  
+<div id="mapOverlay">
+	<div id="mapRightLeft">
+	<div id="maprlcontainer">
+		<div class="mapRightSection">
+			<div class="maprscontainer">
+
+				<h1  style="color:green "> SCHEDULE </h1>
+ 					<div class="scheduleContainer">
+						<div class="single-row">
+		        	<div class="single-column" style="width: 80%; background:green;border-radius: 20px">
+		          	<div class="center">
+		            	<p style="text-align: center; font-size: 24px; color: #fff">Download</p>
+								</div>
+							</div>
+						</div>
+					</div> 
+
+			</div>
+		</div>
+		<!--<div class="mapLeftContainer">-->
+		<!--	<h1> EVENT MAP </h1><br>-->
+		<!--	<p style="text-align: center; font-size: 24px; color: #fff">Coming soon...</p>-->
+		<!--</div>-->
+
+    	    <div class="mapRightSection">
+			<div class="maprscontainer">
+
+				<h1 style="color:green "> EVENT NOTIFICATION</h1>
+
+				<!--<button onclick="document.getElementById('id99').style.display='block'" class="buttonsch">-->
+					<a href="Maker%20Mela%20schedule.pdf" style="text-decoration: none;">
+					<div class="scheduleContainer">
+						<div class="single-row">
+		        	<div class="single-column" style="width: 80%; background:green;border-radius: 20px">
+		          	<div class="center">
+		            	<p style="text-align: center; font-size: 24px; color: #fff">View</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					</a>
+				<!--</button>-->
+
+					<!-- <p style="width: 80%;margin-left: auto;margin-right: auto;"> </p>
+					<br><br> -->
+<!-- 					<button style="background-color: white;border-radius: 25px;border-width:1px; border-color: #bbb;padding: 14px;margin: 20px;">DOWNLOAD SCHEDULE</button>
+ -->
+			</div>
+		</div>
+        </div>
+	</div>
+</div>
+
+<!-- Section MAP ends -->
+
+<!--How to Get Here-->
+<!-- Get here ends -->
+
+<!-- FAQs -->
+	<div id="registerOverlay" style="background: url('img/d1%20(2.html).jpg') no-repeat; background-position: center; background-attachment: fixed; background-size: cover;">
+		<div id="registerSection">
+			<div id="faqs">
+				<p><h1>Frequently Asked Questions</h1></p>
+			    <div class="box_parent">
+			    	<div class="box">
+			         <button class="accordion"> Is there any registration fee? </button>
+			           <div class="panel">
+			             <p class="text-light">No, there is no registration fees.</p>
+			           </div>
+			        </div>
+			     	<div class="box">
+			         <button class="accordion"> What is the duration of the event?  </button>
+			           <div class="panel">
+			             <p class="text-light">The entire event is if 10 days but the hackathon is of 24 hours long.</p>
+			          </div>
+			     	</div>
+			     <div class="box">
+			      <button class="accordion"> What is the last date for registration? </button>
+			        <div class="panel">
+			            <p class="text-light">Last date for registration 27th April 2020.</p>
+			        </div>
+			    </div>
+			     <div class="box">
+			      <button class="accordion">How do I reach the register?  </button>
+			        <div class="panel">
+			            <p class="text-light">Check  the register option in the website and please feel free to contact the numbers for any  further queries.</p>
+			        </div>
+			    </div>
+			     <div class="box">
+			      <button class="accordion">What is the team size ?  </button>
+			        <div class="panel">
+			            <p class="text-light">Minimum of 1 and maximum of 5.</p>
+			        </div>
+			    </div>
+			     <div class="box">
+			      <button class="accordion">Who is eligible to register?  </button>
+			        <div class="panel">
+			            <p class="text-light">Any person who thinks he has a groundbreaking idea or a concept and Who think they have solution for problems face by citizens.</p>
+			        </div>
+			    </div>
+			     <div class="box">
+			      <button class="accordion"> How to submit solutions</button>
+			        <div class="panel">
+			            <p class="text-light">You will be asked to submit from a dedicated link where you need to upload the requested files via online. You will receive a standard format where you have  to tune your solution accordingly and submit it in the  requested format.</p>
+			        </div>
+			    </div>
+			     <div class="box">
+			      <button class="accordion">What is the selection criteria?  </button>
+			        <div class="panel">
+			            <p class="text-light">If ideas right, And if implementation is fruitfull.</p>
+			        </div>
+			    </div>			     
+			     
+			    </div>
+
+				</div>
+		</div>
+	</div>
+
+<!-- FAQs ends -->
+
+<!-- Partner section -->
+
+<div id="partner">
+	<div id="partnercontainer">
+		<div id="partnerTitle">
+			<h1>OUR PARTNERS</h1>
+		</div>
+		<div id="partnerBody">
+            
+			<div class="partnerBox">
+				<a href=""><img src="img/partners/asia.png" style="width: 150px; height: auto; max-width:250px; flex: 1; margin: auto; width: 100%;"></a>
+			</div>
+
+			<div class="partnerBox">
+				<a href=""><img src="img/partners/Akshara.png" style="width: 150px; height: auto; max-width:250px; flex: 1; margin: auto; width: 100%;"></a>
+			</div>
+
+			<div class="partnerBox">
+				<a href=""><img src="img/partners/stumag.png" style="width: 120px; height: auto; max-width:250px; flex: 1; margin: auto; width: 100%;"></a>
+			</div>
+		</div>
+		<div id="partnerBody">
+
+			<div class="partnerBox">
+				<a href="https://maxprotein.in/"><img src="img/partners/valmiki.jpeg" style="width: 180px; height: auto; max-width:250px; flex: 1; margin: auto; width: 100%;"></a>
+
+			</div>
+
+			<div class="partnerBox">
+				<a href=""><img src="img/partners/gtech.jpeg" style="width: 180px; height: auto; max-width:250px; flex: 1; margin: auto; width: 100%;"></a>
+			</div>
+			
+			<div class="partnerBox">
+				<a href=""><img src="img/partners/cloudchip.png" style="width: 180px; height: auto; max-width:250px; flex: 1; margin: auto; width: 100%;"></a>
+			</div>
+		</div>
+		<div id="partnerBody">
+			<div class="partnerBox">
+				<a href="https://maxprotein.in/"><img src="img/partners/Literacyselected.png" style="width: 180px; height: auto; max-width:250px; flex: 1; margin: auto; width: 100%;"></a>
+
+			</div>
+
+			<div class="partnerBox">
+				<a href=""><img src="img/partners/Brandlogo.jpg" style="width: 180px; height: auto; max-width:250px; flex: 1; margin: auto; width: 100%;"></a>
+			</div>
+			
+			<div class="partnerBox">
+				<a href=""><img src="img/partners/Mantram.jpeg" style="width: 180px; height: auto; max-width:250px; flex: 1; margin: auto; width: 100%;"></a>
+			</div>
+		</div>
+
+		<div id="partnerBody">
+			<div class="partnerBox">
+				<a href="https://maxprotein.in/"><img src="img/partners/mahawiki.png" style="width: 180px; height: auto; max-width:250px; flex: 1; margin: auto; width: 100%;"></a>
+
+			</div>
+
+			<div class="partnerBox">
+				<a href=""><img src="img/partners/Nivahatha.png" style="width: 180px; height: auto; max-width:250px; flex: 1; margin: auto; width: 100%;"></a>
+			</div>	
+			
+			<div class="partnerBox">
+				<a href=""><img src="img/partners/kult.png" style="width: 180px; height: auto; max-width:250px; flex: 1; margin: auto; width: 100%;"></a>
+			</div>
+		</div>
+		<div id="partnerBody">
+			<div class="partnerBox">
+				<a href="https://maxprotein.in/"><img src="img/partners/T.A.L.K.jpeg" style="width: 180px; height: auto; max-width:250px; flex: 1; margin: auto; width: 100%;"></a>
+
+			</div>
+
+			<div class="partnerBox">
+				<a href=""><img src="img/partners/workminar.png" style="width: 180px; height: auto; max-width:250px; flex: 1; margin: auto; width: 100%;"></a>
+			</div>	
+			
+		</div>
+	</div>
+
+</div>
+<!-- Section Publication ends -->
+
+<!-- Contact Us started -->
+<div id="registerOverlay">
+<div class="main-box" id="registerSection">
+      <div class="outer-box">
+        
+        <h1>CONTACT US</h1>
+        
+        <div class="container-box">
+          <div class="container-part">
+           	  <div style="font-size: 24px; color:green">
+           	  	          	            <h3>Email:</h3>
+
+                <p id="k">IInnovate.telangana@gmail.com</p>
+              </div>
+          </div>
+          
+          <div class="container-part">            
+            <div class="details">
+              <div style="font-size: 24px; color:green">
+              	            	<h3>Contact Person:</h3>
+                 <p>Krishna Chaitanya: +91 889-753-4725 </p>
+                 <p>Rahul: +91 951-554-4099</p>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+       
+      </div>
+    </div>
+</div>
+<!-- Contact Us Ended-->
+
+
+<!-- Footer starts -->
+<!-- 
+<div class="footer">
+	<p>Copyright &copy; Maker Mela</p>
+	<div class="footerIcons">
+		<a href="https://twitter.com/makermelaindia"><i class="fa fa-twitter" style="color: #fff;"></i></a>
+		<a href="https://www.facebook.com/makermela/"><i class="fa fa-facebook" style="color: #fff;"></i></a>
+		<a href="https://www.instagram.com/makermela/"><i class="fa fa-instagram" style="color: #fff;"></i></a>
+	</div>
+	<p>makermela@somaiya.edu</p>
+</div> -->
+
+<!-- Footer ends -->
+
+<script>
+function myFunction() {
+	var x = document.getElementById("myTopnav");
+	if (x.className === "topnav") {
+			x.className += " responsive";
+			}
+	else {
+			x.className = "topnav";
+			}
+	}
+</script>
+
+  <script>
+						function myMap() {
+						  var myCenter = new google.maps.LatLng(19.073515,72.899544);
+						  var mapCanvas = document.getElementById("map-container");
+						  var mapOptions = {center: myCenter, zoom: 17};
+						  var map = new google.maps.Map(mapCanvas, mapOptions);
+						  var marker = new google.maps.Marker({position:myCenter});
+						  marker.setMap(map);
+						}
+				</script>
+				<script src="https://maps.googleapis.com/maps/api/js?callback=myMap&amp;key=AIzaSyAk_WZV-2xOAL0W6DpHhGDMtaMshTlzvmw"></script>
+  
+<!-- Scroll reveal is used to reveal content after they enter the viewport-->
+ <script src="scrollreveal.min.js"></script>
+
+<script>
+
+	window.sr = ScrollReveal({reset: true });
+	window.sr = ScrollReveal({reset: true });
+</script>
+
+
+<script>
+
+	sr.reveal('#headText', {duration: 500, origin: 'bottom', scale: 0.5});
+	sr.reveal('.benefitBox', {duration: 500, origin: 'bottom', scale: 0.5});
+
+	sr.reveal('#speakerTitle', {duration: 500, origin: 'right', scale: 0.5});
+	sr.reveal('.speakerBox', {duration: 1000, origin: 'left', scale: 0.5});
+
+	sr.reveal('.single-column', {duration: 1000, origin: 'left', scale: 0.5});
+
+	sr.reveal('#faqs', {duration: 1000, origin: 'left', scale: 0.5});
+	sr.reveal('.accordion', {duration: 1000, origin: 'left', scale: 0.5});
+
+
+	sr.reveal('.maprscontainer', {duration: 500, origin: 'right', scale: 0.5});
+	sr.reveal('.mapLeftContainer', {duration: 1000, origin: 'left', scale: 0.5});
+
+	sr.reveal('#registerContainer', {duration: 500, origin: 'right', scale: 0.5});
+	sr.reveal('.methodBox', {duration: 1000, origin: 'left', scale: 0.5});
+
+	sr.reveal('#partnerTitle', {duration: 500, origin: 'right', scale: 0.5});
+	sr.reveal('.partnerBox', {duration: 1000, origin: 'left', scale: 0.5});
+
+	sr.reveal('#publicationsTitle', {duration: 500, origin: 'right', scale: 0.5});
+	sr.reveal('.publicationsBox', {duration: 1000, origin: 'left', scale: 0.5});
+</script>
+
+<script type="text/javascript">
+        var acc = document.getElementsByClassName("accordion");
+    var panel = document.getElementsByClassName('panel');
+
+    for (var i = 0; i < acc.length; i++) {
+        acc[i].onclick = function() {
+            var setClasses = !this.classList.contains('active');
+            setClass(acc, 'active', 'remove');
+            setClass(panel, 'show', 'remove');
+            if (setClasses) {
+                this.classList.toggle("active");
+                this.nextElementSibling.classList.toggle("show");
+            }
+        }
+    }
+
+    function setClass(els, className, fnName) {
+        for (var i = 0; i < els.length; i++) {
+            els[i].classList[fnName](className);
+        }
+    }
+</script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-111392550-2');
+</script>
+<!-- Global site tag (gtag.js) - Google Ads: 679413035 -->
+ <!-- Event snippet for pv conversion page -->
+<script>
+  gtag('event', 'conversion', {'send_to': 'AW-679413035/GT4bCID47rgBEKuK_MMC'});
+</script>
+<script type="application/ld+json">
+// {
+//   "@context": "http://schema.org",
+//   "@type": "ExhibitionEvent",
+//   "name": "Maker Mela",
+//   "image": "http://makermela.com/cover/makermela_cover.jpg", 
+//   "url": "http://makermela.com",
+//   "description": "Maker Mela is the premier event for grassroot innovations in India. It is the celebration of arts, crafts, engineering, science, the Do-It-Yourself (DIY) mindset, and the Maker Movement. It's a platform for like-minded folks who bring to life a diverse range of raw, unique and unconventional ideas.",
+//   "startDate": "2020-01-09T10:00",
+//   "endDate": "2020-01-11T17:00",
+//   "location": {
+//     "@type": "Place",
+//     "name": "Maker Mela",
+//     "sameAs": "http://makermela.com/",
+//     "address": {
+//       "@type": "PostalAddress",
+//       "streetAddress": "Somaiya Vidyavihar, ",
+//       "addressLocality": "Vidyavihar",
+//       "addressRegion": "Mumbai",
+//       "postalCode": "400077"
+//     }
+//   },
+//   "offers": {
+//     "@type": "Offer",
+//     "url": "https://www.eventbrite.com/e/maker-mela-tickets-74091310103"
+//   }
+// }
+ </script>
+</body>
+
+<!-- Mirrored from makermela.com/ by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 17 Apr 2020 15:12:55 GMT -->
+</html>

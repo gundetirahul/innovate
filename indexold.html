@@ -1,0 +1,1981 @@
+<!DOCTYPE html>
+<html>
+
+<!-- Mirrored from makermela.com/ by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 17 Apr 2020 14:59:57 GMT -->
+<head>
+<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="../use.fontawesome.com/releases/v5.2.0/css/all.css">
+<link rel="stylesheet" href="../www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="../cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="fonts/fonts.css">
+<link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+<link rel="stylesheet" href="../i.icomoon.io/public/temp/fdfcfa0175/UntitledProject/style.html">
+<link rel="stylesheet" type="text/css" href="style.css">
+
+	<link rel="icon" href="mm-logo.jpg" type="image/x-icon">
+<title>Maker Mela</title>
+<style type="text/css">
+
+.hero-image {
+background-image: url("img/d1%20(1.html).jpg");
+background-attachment: fixed;
+background-position: center;
+height: 100vh;
+background-repeat: no-repeat;
+background-size: cover;
+position: relative;
+}
+
+.hero-text {
+margin: auto;
+color: white;
+font-family: 'Open Sans', sans-serif;
+font-size: 24px;
+line-height: 1.6;
+text-align: center;
+width: 80%;
+padding-top: 100px;
+}
+.hero-text h1{
+font-size:36px;
+font-family:'Helvetica';
+}
+.overlay {
+	height: 100vh;
+	width: 100%;
+	position: absolute;
+	overflow: auto;
+	top: 0px;
+	left: 0px;
+	background: rgba(100, 0, 0, 0.7); /*can be anything, of course*/
+	display: flex;
+}
+.button {
+	border: none;
+	color: white;
+	padding: 11px 20px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 10px;
+	-webkit-transition-duration: 0.4s; /* Safari */
+	transition-duration: 0.4s;
+	cursor: pointer;
+	margin: auto;
+	width: 60%;
+}
+.button5 {
+	background-color: white;
+	color: #e74c3c;
+	font-size: 12px;
+	border-radius: 12px;
+	letter-spacing: 1px;
+}
+.button1 {
+background-color: #cc0000;
+color: white;
+border-radius: 12px;
+margin-top: 40px;
+transition: 0.1s ease-in;
+font-size: 15px;
+}
+.button5:hover {
+	background-color: #e74c3c;
+	color: white;
+	font-weight:bold;
+	font-size: 15px;
+}
+.button1:hover {
+	background-color: #fff;
+	color: #cc0000;
+	border: 2px solid #cc0000;
+}
+
+.button2 {
+background-color: #fff;
+color: #cc0000;
+border-radius: 12px;
+margin-top: 40px;
+transition: 0.1s ease-in;
+font-size: 15px;
+text-transform: uppercase;
+}
+
+.button2:hover {
+	background-color: #3498db;
+	color: white;
+	font-size: 18px;
+}
+
+.button3 {
+background-color: #fff;
+color: #cc0000;
+border-radius: 12px;
+margin-top: 40px;
+transition: 0.1s ease-in;
+font-size: 15px;
+text-transform: uppercase;
+}
+
+.button3:hover {
+	background-color: #3498db;
+	color: white;
+	font-size: 12px;
+}
+
+@media only screen and (min-width: 860px) {
+.hero-text {
+	color: white;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 36px;
+	line-height: 1.6;
+	text-align: center;
+	width: 50%;
+}
+.hero-text p{
+	font-size: 48px;
+}
+.hero-text h1{
+	font-size:72px;
+	font-family:'Proxima Nova';
+	font-weight: bold;
+}
+.button{
+	font-size: 18px;
+	width: 50%;
+}
+.button5:hover {
+    font-size: 18px;
+}
+.button2:hover{
+		padding: 16px 30px;
+		font-size: 20px;
+}
+.button{
+	font-size: 15px;
+}
+.button3:hover{
+		padding: 16px 25px;
+		font-size: 20px;
+}
+}
+</style>
+
+<style type="text/css">
+		div.panel {
+		padding: 0 18px;
+		display: none;
+		background-color: white;
+		overflow: hidden;
+		}
+
+		div.panel.show {
+				display: block !important;
+		}
+		.accordion {
+				background-color: #fff;
+				color: #444;
+				cursor: pointer;
+				padding: 18px;
+				width: 100%;
+				border: none;
+				text-align: left;
+				outline: none;
+				font-size: 15px;
+				transition: 0.4s;
+				font-weight: bolder;
+		}
+		#faqs h1 {
+			text-align: center;
+			color: #fff;
+			font-size: 24px;
+			font-family:'Proxima Nova';
+			text-transform: uppercase;
+			width: 80%;
+			margin: auto;
+			margin-top: 50px;
+			letter-spacing: 1.25px;
+		}
+		.box{
+			padding: 10px;
+			width: 90%;
+			margin: auto;
+			margin-bottom: 30px;
+		}
+		.box_parent{
+			display: flex;
+			flex-wrap: wrap;
+		}
+		.active, .accordion:hover {
+				background-color: #eee;
+		}
+		.accordion:after {
+			content: '\002B';
+			color: #777;
+			font-weight: bold;
+			float: right;
+			margin-left: 5px;
+		}
+		.active:after {
+			content: "\2212";
+		}
+		#faqs{
+			min-height: 100vh;
+			padding-top: 30px;
+			padding-bottom: 30px;
+		}
+	@media only screen and (min-width: 660px) {
+		.box{
+			padding: 10px;
+			width: 40%;
+			margin: auto;
+			margin-bottom: 30px;
+		}
+		#faqs h1 {
+			font-size: 36px;
+			margin-bottom: 90px;
+		}
+	}
+</style>
+
+	<style type="text/css">
+		.iconBox p {
+			font-size: 17px;
+			text-transform: uppercase;
+			margin-top: 60px;
+		}
+		.iconBox:hover {
+			padding: 10px 10px;
+			cursor: pointer;
+		}
+		.benefitBox img{
+		height: 80px;
+		width:80px;
+	    }
+		@media only screen and (min-width: 860px){
+			.iconBox {
+				height: 300px;
+				width: 30%;
+			}
+			.icon:hover {
+			padding: 10px 10px;
+			cursor: pointer;
+		}
+		}
+	</style>
+
+<style type="text/css">
+	.partnerBox > a > img{
+		max-height:  120px;
+		max-width: 250px;
+		margin: auto;
+	}.partnerBox > a {
+		display: flex;
+	}
+</style>
+<!--<script type="text/javascript" src="snowstorm-min.js"></script>-->
+</head>
+
+<body>
+
+	<div class="topnav" id="myTopnav">
+		<a href="index-2.html" class="logo-mm"><img src="img/mm-logo.png"></a>
+		<a href="#rightleft" class="navtext" style="font-family: helvetica;">About</a>
+		<a href="#benefits" class="navtext" style="font-family: helvetica;">Benefits</a>
+		<a href="#reg" class="navtext" style="font-family: helvetica;">Register</a>
+		<a href="#videos" class="navtext" style="font-family: helvetica;">Videos</a>
+		<a href="#speaker" class="navtext" style="font-family: helvetica;">Speakers</a>
+		<a href="#mapOverlay" class="navtext" style="font-family: helvetica;">Map and Schedule</a>
+		<a href="events.html" class="navtext" style="font-family: helvetica;">Events</a>
+		<a href="http://thedarwin.in/" class="navtext" style="font-family: helvetica;">Darwin</a>
+		<a href="#faqs" class="navtext" style="font-family: helvetica;">FAQs</a>
+		<a href="#partner" class="navtext" style="font-family: helvetica;">Partners</a>
+		<a href="http://blog.makermela.com/" class="navtext" style="font-family: helvetica;">Blogs</a>
+		<!-- <a href="#" class="navtext login" style="font-family: helvetica;">Login</a> -->
+		<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+			<i class="fa fa-bars"></i>
+		</a>
+	</div>
+
+
+<!-- Section 1 -->
+<div class="hero-image">
+	<div class="overlay">
+  		<div class="hero-text">
+   	 		<h1 style="margin-bottom: 0px;">I-INNOVATE</h1>
+   	 		<h3 style="margin-top: 0px;"> 25<sup>th</sup> April 2020 </h3>
+
+				<p style="font-family: 'Lobster', cursive; letter-spacing: 1px;">telangana's I-INNOVATE An Online Hackathon</p>
+
+			<a href="https://airtable.com/shrfPdbKyp6mHyh7F"><button class="button button5">REGISTER NOW</button></a>
+  		</div>
+	</div>
+</div>
+<!-- Section 1 ended-->
+
+<div id="rightleft">
+	<div id="rlcontainer">
+		<div class="rightText">
+			<div class="rtcontainer">
+
+				<h1> About Maker Mela </h1>
+
+				<p>Maker Mela is the premier event for grassroot innovations in India. It is the celebration of arts, crafts, engineering, science, the Do-It-Yourself (DIY) mindset, and the Maker Movement. It's a platform for like-minded folks who bring to life a diverse range of raw, unique and unconventional ideas. </p>
+				<p>From pottery to 3D printing, there's some for everyone. You think you have it in you? Come take a quick peek, and meet the maker in you. Get ready to inspire, get inspired, and explore what tickles your curiosity. COME. CREATE. BAKE. MAKE. SHOWCASE.<p>
+				<br>
+				<p>
+					<span style="font-size: 24px;">
+						<i class="fas fa-user" style="color: #cc0000"></i>  15+ Professional Speakers<br><br>
+						<i class="fas fa-chalkboard-teacher" style="color: #cc0000"></i>  400+ Makers <br><br>
+						<i class="fas fa-users" style="color: #cc0000"></i>  100,000+ Visitors<br>
+					</span>
+				</p>
+				<a href="flashback.html"><button class="button button1"><!-- <i class="fas fa-2x fa-angle-double-left"></i> -->  FLASHBACK</button></a>
+			</div>
+		</div>
+		<div class="leftImage">
+			<img src="img/WEB.png">
+		</div>
+	</div>
+</div>
+<!-- Section rightleft ends -->
+
+<!-- Register Section -->
+<div id="registerOverlay" style="background: url('img/boat.png') no-repeat; background-position: center; background-attachment: fixed; background-size: cover;">
+	<div id="registerSection">
+	<div id="registerContainer" style="width: 80%; background: rgb(255,255,255);">
+		<div id="registerTitle">
+			<h1>An initiative of</h1>
+		</div>
+		<div id="registerMethods" style="display: flex; max-width: 80%; margin: auto; flex-wrap: wrap; justify-content: space-around;">
+
+			<div class="partnerBox">
+				<img src="img/trust.png">
+			</div>
+
+			<div class="partnerBox" style="margin-left: 50px; margin-right: 50px;">
+				<img src="img/svv.png" style="margin-bottom: 20px;">
+			</div>
+		</div>
+		<div id="registerTitle">
+			<h1>Organized by</h1>
+		</div>
+		<div id="registerMethods" style="display: flex; max-width: 80%; margin: auto; flex-wrap: wrap; justify-content: space-around;">
+
+			<div class="partnerBox">
+				<img src="img/riidllogo.png">
+			</div>
+		</div>
+
+		<!--<div id="registerTitle">
+			<h1>Supported by</h1>
+		</div>
+		<div id="registerMethods" style="display: flex; max-width: 80%; margin: auto; flex-wrap: wrap; justify-content: space-around;">
+
+			<div class="partnerBox">
+				<img src="img/dst.png">
+			</div>
+
+			<div class="partnerBox" style="margin-left: 30px; margin-right: 50px;">
+				<img src="img/birac.jpg">
+			</div>
+		</div>-->
+		</div>
+	</div>
+
+	</div>
+
+
+	<div id="benefits">
+		<div id="headText">
+			<p>Maker Benefits</p>
+		</div>
+		<div id="row1">
+			<div class="benefitBox">
+				<img src="img/benefits/fund.png"><br><br>
+				<p class="benefitsTitle">Funding</p>
+				<p class="benefitsText">Possible funding for building project prototypes</p>
+			</div>
+			<div class="benefitBox">
+				<img src="img/benefits/mentor.png"><br><br>
+				<p class="benefitsTitle">Mentoring</p>
+				<p class="benefitsText">Six months of mentoring from global leaders and Incubation Support</p>
+			</div>
+			<div class="benefitBox">
+				<img src="img/benefits/brain.png"><br><br>
+				<p class="benefitsTitle">Pitching Ideas</p>
+				<p class="benefitsText">Get a chance to pitch ideas to high profile Investors</p>
+			</div>
+			<div class="benefitBox">
+				<img src="img/benefits/desk.png"><br><br>
+				<p class="benefitsTitle">Space for Development</p>
+				<p class="benefitsText">24x7 access to space for developing your product</p>
+			</div>
+			<div class="benefitBox">
+				<img src="img/benefits/tag.png"></i><br><br>
+				<p class="benefitsTitle">Discounts</p>
+				<p class="benefitsText">Discount in the membership fees for accessing the FABLAB and BIOLAB materials / machines.</p>
+			</div>
+			<div class="benefitBox">
+				<img src="img/benefits/gift-card.png"><br><br>
+				<p class="benefitsTitle">Takeaways</p>
+				<p class="benefitsText">Several takeaways from the event sponsors (Uber free rides, gift coupons and many more.)</p>
+			</div>
+			<div class="benefitBox">
+				<img src="img/benefits/buy.png"><br><br>
+				<p class="benefitsTitle">Product Selling</p>
+				<p class="benefitsText">Get an opportunity to sell your products live in a separate Maker shop during the the event.</p>
+			</div>
+			<!--<div class="benefitBox">-->
+			<!--	<img src="img/benefits/living-room.png"><br><br>-->
+			<!--	<p class="benefitsTitle">Accommodation</p>-->
+				<!--<p class="benefitsText">Accommodation for 30 Makers during the event, for first 100 applicants who apply.</p>-->
+			<!--</div>-->
+		</div>
+	</div>
+<!-- Section Benefits ends -->
+
+<!-- Register Section -->
+<div id="reg">
+<div id="registerOverlay" style="background: url('img/d1%20(3.html).jpg') no-repeat; background-position: center; background-attachment: fixed; background-size: cover;">
+	<div id="registerSection">
+	<div id="registerContainer" style="background: rgb(255,255,255);">
+		<div id="registerTitle">
+			<h1>register</h1>
+		</div>
+		<div id="registerMethods" style="display: flex;max-width: 80%;margin: auto;flex-wrap: wrap;justify-content: space-around;margin-top: 60px;margin-bottom: 60px;">
+			<div class="methodBox">
+				<a href="https://airtable.com/shrfPdbKyp6mHyh7F">
+					<i class="fas fa-3x fa-chalkboard-teacher" style="color: #cc0000"></i><br><br>
+					<p class="methodTitle">Register as a Maker</p>
+				</a>
+			</div>
+			<div class="methodBox">
+				<a href="https://www.eventbrite.com/e/maker-mela-tickets-74091310103">
+					<i class="fas fa-3x fa-users" style="color: #cc0000"></i><br><br>
+					<p class="methodTitle">Register as a Visitor</p>
+				</a>
+			</div>
+			<!--<div class="methodBox">
+				<a href="https://docs.google.com/forms/d/e/1FAIpQLSeAelNex6FbiYoUCMAJiVO-VmQ73mtVlTTzpRSg5FLiEeFXBA/viewform?c=0&w=1">
+					<i class="fas fa-3x fa-bed" style="color: #cc0000"></i><br><br>
+					<p class="methodTitle">Apply for accomodation</p>
+				</a>
+			</div>-->
+			
+		</div>
+		</div>
+	</div>
+</div>
+</div>
+
+<style type="text/css">
+  #videos{
+    display: flex;
+    min-height: 100vh;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    flex-direction: column;
+  }
+  #videosTitle{
+    text-align: center;
+  }
+
+
+  #videosTitle > h1{
+    font-family: 'proxima-nova', sans-serif;
+    color: #cc0000;
+    font-size: 24px;
+  }
+  #videosBody {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    color: #333;
+  }
+  .videoBox{
+    margin: 2em;
+  }
+	.videoBox p{
+		font-family: sans-serif;
+		font-size: 16px;
+	}
+  #layer1{
+    width: 70%;
+    margin: auto;
+    text-align: center;
+    font-size: 24px;
+
+  }
+  #layer1 > .videoBox  {
+    margin: auto;
+    min-width: 100%;
+  }
+
+  #layer1 > .videoBox > iframe {
+    margin: auto;
+    min-width: 100%;
+    min-height: 300px;
+  }
+   @media only screen and (min-width: 660px) {
+   		#layer1 > .videoBox > iframe {
+   			min-height: 720px;
+   		}
+
+			#videosTitle h1{
+				font-size: 36px;
+			}
+   }
+  #layer2{
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 70%;
+    justify-content: space-between;
+    text-align: center;
+    font-size: 18px;
+  }
+  #layer2 > .videoBox  {
+    margin: auto;
+    min-width: 25%;
+  }
+  #layer2 > .videoBox > iframe {
+    margin: auto;
+    min-width: 100%;
+    min-height: 250px;
+  }
+  #layer3{
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+  	width: 70%;
+    justify-content: space-between;
+    text-align: center;
+    font-size: 21px;
+  }
+  #layer3 > .videoBox  {
+    margin: auto;
+    min-width: 45%;
+
+  }
+  #layer3 > .videoBox > iframe {
+    margin: auto;
+    min-width: 100%;
+    min-height: 300px;
+  }
+  @media only screen and (min-width: 660px) {
+   		#layer3 > .videoBox > iframe {
+   			min-height: 400px;
+   		}
+   }
+</style>
+<!-- -->
+<div id="videos">
+  <div id="videosTitle">
+    <h1>Know More About Maker Mela</h1>
+  </div>
+  <div id="videosBody">
+    <div id="layer1">
+      <div class="videoBox">
+      	<p style="font-size: 20px;">Maker Mela Aftermovie</p>
+
+      <iframe src="https://www.youtube.com/embed/DhBtTCayBH0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+      </div>
+    </div>
+
+    <div id="layer2">
+      <div  class="videoBox">
+      	<p>Inspiring Makers - Samir Somaiya</p>
+
+        <iframe src="https://www.youtube.com/embed/a58IUtH_CBk" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+      </div>
+      <!--<div  class="videoBox">
+      	<p>Message to Makers by Jamshyd Godrej</p>
+
+        <iframe src="https://www.youtube.com/embed/VSuMivI2MEM" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+      </div>-->
+      <div  class="videoBox">
+      	<p>Testimony by Dr. Raghunath Mashelkar</p>
+
+        <iframe src="https://www.youtube.com/embed/s_Y0dNYma6g" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+      </div>
+      <div  class="videoBox">
+      	<p>Message to Makers by Jamshyd Godrej</p>
+
+        <iframe src="https://www.youtube.com/embed/VSuMivI2MEM" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+      </div>
+    </div>
+
+    <div id="layer3">
+      <div  class="videoBox">
+      	<p>What is Maker Mela ?</p>
+
+        <iframe src="https://www.youtube.com/embed/m6mQsO4X4wg" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+      </div>
+      <div  class="videoBox">
+        <p>Are you a Maker ?</p>
+        <iframe src="https://www.youtube.com/embed/bGRnBp_22Ds" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- -->
+
+<div id="speaker">
+	<div id="pcontainer">
+		<div id="speakerTitle">
+			<h1 style="padding-bottom: 50px;"> Star Speaker</h1>
+		</div>
+
+		<div class="single-row">
+			
+			<div class="single-column" style="width: 80%;">
+				<div class="center">
+					<button onclick="document.getElementById('id93').style.display='block'" class="buttonsch">
+						<img src="img2020/speaker/maltman.png"><br>
+						<p>Miltch Altman<br><font style="color: #111; font-size: 13px; letter-spacing: 1px;"></font> <br> <font style="color: #333; font-size: 13px; text-transform: none;">Founder And CEO - CornField Electonics</font></p>
+					</button>
+				</div>
+		    </div>
+		    <div class="single-column" style="width: 80%;">
+				<div class="center">
+					<button onclick="document.getElementById('id930').style.display='block'" class="buttonsch">
+						<img src="img2020/speaker/hemrajani.jpg"><br>
+						<p>Ashish Hemrajani<br><font style="color: #111; font-size: 13px; letter-spacing: 1px;"></font> <br> <font style="color: #333; font-size: 13px; text-transform: none;">BookMyShow, Founder</font></p>
+					</button>
+				</div>
+		    </div>
+			
+		</div>
+	</div>
+</div>
+
+
+<div id="speaker">
+	<div id="pcontainer">
+		<div id="speakerTitle">
+			<h1 style="padding-bottom: 50px;">Our Speakers</h1>
+		</div>
+
+		<div class="single-row">
+			
+			<div class="single-column" style="width: 80%;">
+				<div class="center">
+					<button onclick="document.getElementById('id90').style.display='block'" class="buttonsch">
+						<img src="img2020/speaker/mehakm.png"><br>
+						<p>Mehak Mirza Prabhu<br> <font style="color: #111; font-size: 13px; letter-spacing: 1px;">Story Telling:Passion to Profesion</font> <br> <font style="color: #333; font-size: 13px; text-transform: none;">Storyteller | Writer | Performer
+Motivational Speaker</font></p>
+					</button>
+				</div>
+			</div>
+			
+			<div class="single-column" style="width: 80%;">
+				<div class="center">
+					<button onclick="document.getElementById('id91').style.display='block'" class="buttonsch">
+						<img src="img2020/speaker/amenon.png"><br>
+						<p>Anjali Menon<br> <font style="color: #111; font-size: 13px; letter-spacing: 1px;">TRANSFORMING PUBLIC SPACES IN INDIA</font> <br> <font style="color: #333; font-size: 13px; text-transform: none;">Design Entrepreneur
+Co - founder at Gudgudee Forbes India 30 Under 30</font></p>
+					</button>
+				</div>
+		    </div>
+			
+			<div class="single-column" style="width: 80%;">
+				<div class="center">
+					<button onclick="document.getElementById('id92').style.display='block'" class="buttonsch">
+						<img src="img2020/speaker/ntanna1.png"><br>
+						<p>Namrata Tanna<br> <font style="color: #111; font-size: 13px; letter-spacing: 1px;">Innovating for Local Problems</font> <br> <font style="color: #333; font-size: 13px; text-transform: none;">Founder,
+Cooked By Moms Former Journalist</font></p>
+					</button>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div id="speaker">
+	<div id="pcontainer">
+		<div id="speakerTitle">
+			<h1 style="padding-bottom: 50px;">BREAKING BARRIERS:A Panel Session</h1>
+		</div>
+
+		<div class="single-row">
+			
+			<div class="single-column" style="width: 80%;">
+				<div class="center">
+					<button onclick="document.getElementById('id08').style.display='block'" class="buttonsch">
+						<img src="img2020/panel/paulam.png"><br>
+						<p>Paula Mariwala<br> <font style="color: #333; font-size: 13px; text-transform: none;">Founder/Co-President, Stanford
+Angels & Entrepreneurs India MD.</font></p>
+					</button>
+				</div>
+			</div>
+			
+			<div class="single-column" style="width: 80%;">
+				<div class="center">
+					<button onclick="document.getElementById('id99').style.display='block'" class="buttonsch">
+						<img src="img2020/panel/agupta.png"><br>
+						<p>Dr.Anita Gupta<br><font style="color: #333; font-size: 13px; text-transform: none;">Advisor/ Scientist G
+at DST, Govt. of India</font></p>
+					</button>
+				</div>
+			</div>
+			
+			<div class="single-column" style="width: 80%;">
+				<div class="center">
+					<button onclick="document.getElementById('id94').style.display='block'" class="buttonsch">
+						<img src="img2020/panel/mshah.png"><br>
+						<p>Maitri Shah <br> <font style="color: #333; font-size: 13px; text-transform: none;">Founder/ Chief Enthusiam Officer
+at Mind Assets</font></p>
+					</button>
+				</div>
+		    </div>
+		</div>
+		
+		<div class="single-row">
+		    <div class="single-column" style="width: 80%;">
+				<div class="center">
+					<button onclick="document.getElementById('id95').style.display='block'" class="buttonsch">
+						<img src="img2020/panel/bpandya.png"><br>
+						<p>Bhavna Pandya<br><font style="color: #333; font-size: 13px; text-transform: none;">Innovation Catalyst, Riidl
+Head, Bio Riidl</font></p>
+					</button>
+				</div>
+		    </div>
+		</div>
+		    
+		   
+		
+	</div>
+</div>
+
+<div id="speaker">
+	<div id="pcontainer">
+		<div id="speakerTitle">
+			<h1 style="padding-bottom: 50px;">Influencer Gathering</h1>
+		</div>
+
+		<div class="single-row">
+			
+			<div class="single-column" style="width: 80%;">
+				<div class="center">
+					<button onclick="document.getElementById('id960').style.display='block'" class="buttonsch">
+						<img src="img2020/influencer/i3.jpg"><br>
+						<p>Gaurav Taneja <br> <font style="color: #333; font-size: 13px; text-transform: none;">Content Creator/pilot/IITian</font></p>
+					</button>
+				</div>
+			</div>
+			
+			<div class="single-column" style="width: 80%;">
+				<div class="center">
+					<button onclick="document.getElementById('id970').style.display='block'" class="buttonsch">
+						<img src="img2020/influencer/i2.png"><br>
+						<p>Angry prash <br> <font style="color: #333; font-size: 13px; text-transform: none;">Content Creator</font></p>
+					</button>
+				</div>
+			</div>
+			
+			<div class="single-column" style="width: 80%;">
+				<div class="center">
+					<button onclick="document.getElementById('id980').style.display='block'" class="buttonsch">
+						<img src="img2020/influencer/i1.png"><br>
+						<p>The Rawknee<br> <font style="color: #333; font-size: 13px; text-transform: none;">Content Creator/Gamer</font></p>
+					</button>
+				</div>
+		    </div>
+		</div>
+		
+		<div class="single-row">
+			
+			<div class="single-column" style="width: 80%;">
+				<div class="center">
+					<button onclick="document.getElementById('id960').style.display='block'" class="buttonsch">
+						<img src="img2020/influencer/i4.png"><br>
+						<p>Ashish Chanchlani <br> <font style="color: #333; font-size: 13px; text-transform: none;">Content Creator</font></p>
+					</button>
+				</div>
+			</div>
+			
+			<!--<div class="single-column" style="width: 80%;">
+				<div class="center">
+					<button onclick="document.getElementById('id970').style.display='block'" class="buttonsch">
+						<img src="./img2020/influencer/i.png"><br>
+						<p>Slayy Point <br> <font style="color: #333; font-size: 13px; text-transform: none;"> Makers of fun videos</font></p>
+					</button>
+				</div>
+			</div>
+			
+			<div class="single-column" style="width: 80%;">
+				<div class="center">
+					<button onclick="document.getElementById('id980').style.display='block'" class="buttonsch">
+						<img src="./img2020/influencer/i1.png"><br>
+						<p>The Rawknee<br> <font style="color: #333; font-size: 13px; text-transform: none;">Content Creator/Gamer</font></p>
+					</button>
+				</div>
+		    </div>-->
+		</div>
+		
+		<!--<div class="single-row">
+			
+			<div class="single-column" style="width: 80%;">
+				<div class="center">
+					<button onclick="document.getElementById('id960').style.display='block'" class="buttonsch">
+						<img src="./img2020/influencer/i3.jpg"><br>
+						<p>Mohammed Salim Khan<br> <font style="color: #333; font-size: 13px; text-transform: none;">Video Creator, Film maker, YouTuber and Blogger</font></p>
+					</button>
+				</div>
+			</div>
+			
+			<div class="single-column" style="width: 80%;">
+				<div class="center">
+					<button onclick="document.getElementById('id970').style.display='block'" class="buttonsch">
+						<img src="./img2020/influencer/i2.png"><br>
+						<p>satya Saggar<br> <font style="color: #333; font-size: 13px; text-transform: none;">YouTuber, Traveller, Actor and Lifestyle blogger</font></p>
+					</button>
+				</div>
+			</div>
+			
+			<div class="single-column" style="width: 80%;">
+				<div class="center">
+					<button onclick="document.getElementById('id980').style.display='block'" class="buttonsch">
+						<img src="./img2020/influencer/i1.png"><br>
+						<p>Jatt Prabjot<br> <font style="color: #333; font-size: 13px; text-transform: none;">Traveller, Vlogger and Viner</font></p>
+					</button>
+				</div>
+		    </div>
+		</div>-->
+		
+		
+	</div>
+</div>
+
+<div id="mapOverlay">
+	<div id="mapRightLeft">
+	<div id="maprlcontainer">
+		<div class="mapRightSection">
+			<div class="maprscontainer">
+
+				<h1> SCHEDULE </h1>
+				<!--<p style="text-align: center; font-size: 24px; color: #fff">Coming soon...</p>-->
+
+
+					<!-- <p style="width: 80%;margin-left: auto;margin-right: auto;"> </p>
+					<br><br> -->
+		<a href="Maker%20Mela%20schedule.pdf" target="blank" style="text-decoration: none;">
+					<div class="scheduleContainer">
+						<div class="single-row">
+		        	<div class="single-column" style="width: 80%;">
+		          	<div class="center">
+		            	<p style="text-align: center; font-size: 24px; color: #cc0000">Download</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					</a>
+
+			</div>
+		</div>
+		<!--<div class="mapLeftContainer">-->
+		<!--	<h1> EVENT MAP </h1><br>-->
+		<!--	<p style="text-align: center; font-size: 24px; color: #fff">Coming soon...</p>-->
+		<!--</div>-->
+
+    	    <div class="mapRightSection">
+			<div class="maprscontainer">
+
+				<h1> EVENTS </h1>
+
+				<!--<button onclick="document.getElementById('id99').style.display='block'" class="buttonsch">-->
+					<a href="Maker%20Mela%20schedule.pdf" style="text-decoration: none;">
+					<div class="scheduleContainer">
+						<div class="single-row">
+		        	<div class="single-column" style="width: 80%;">
+		          	<div class="center">
+		            	<p style="text-align: center; font-size: 24px; color: #cc0000">View All</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					</a>
+				<!--</button>-->
+
+					<!-- <p style="width: 80%;margin-left: auto;margin-right: auto;"> </p>
+					<br><br> -->
+<!-- 					<button style="background-color: white;border-radius: 25px;border-width:1px; border-color: #bbb;padding: 14px;margin: 20px;">DOWNLOAD SCHEDULE</button>
+ -->
+			</div>
+		</div>
+        </div>
+	</div>
+</div>
+
+<!-- Section MAP ends -->
+
+<!--How to Get Here-->
+<div id="gethere">
+	<div id="headText">
+		<p style="padding: 40px 0;">GET HERE</p>
+	</div>
+	<div id="row1" style="margin-top: 20px; margin-bottom: 20vh;">
+		<div class="benefitBox" style="margin: 0 30px;">
+			<a href="https://www.google.co.in/maps/dir/K.J.+Somaiya+College+Of+Engineering,+Vidyavihar,+Mumbai,+Maharashtra/Chhatrapati+Shivaji+International+Airport+(BOM),+Chhatrapati+Shivaji+International+Airport+Area,+Vile+Parle,+Mumbai,+Maharashtra+400099/@19.0883103,72.856779,14z/data=!4m14!4m13!1m5!1m1!1s0x3be7c627a20bcaa9:0xb2fd3bcfeac0052a!2m2!1d72.899697!2d19.073041!1m5!1m1!1s0x3be7c85099bd2947:0x1ecc1a60c474a8ae!2m2!1d72.8656144!2d19.0895595!5i1">
+				<i class="fas fa-3x fa-plane" style="color: #cc0000;"></i><br><br>
+				<p class="benefitsTitle">From Airport</p>
+			</a>
+		</div>
+		<div class="benefitBox" style="margin: 0 30px;">
+			<a href="https://www.google.co.in/maps/dir/K.J.+Somaiya+College+Of+Engineering,+Vidyavihar,+Mumbai,+Maharashtra/19.0786997,72.8976965/@19.0769698,72.8958451,17z/data=!4m9!4m8!1m5!1m1!1s0x3be7c627a20bcaa9:0xb2fd3bcfeac0052a!2m2!1d72.899697!2d19.073041!1m0!3e2">
+				<i class="fas fa-3x fa-train" style="color: #cc0000;"></i><br><br>
+				<p class="benefitsTitle">From Train Station</p>
+			</a>
+		</div>
+		<div class="benefitBox" style="margin: 0 30px;">
+			<a href="https://www.google.co.in/maps/dir//K.J.+Somaiya+College+Of+Engineering,+Vidyavihar,+Mumbai,+Maharashtra/@19.0730377,72.8646773,13z/data=!3m1!4b1!4m9!4m8!1m0!1m5!1m1!1s0x3be7c627a20bcaa9:0xb2fd3bcfeac0052a!2m2!1d72.899697!2d19.073041!3e0">
+				<i class="fas fa-3x fa-road" style="color: #cc0000;"></i><br><br>
+				<p class="benefitsTitle">Via Road</p>
+			</a>
+		</div>
+	</div>
+</div>
+<!-- Get here ends -->
+
+<!-- FAQs -->
+	<div id="registerOverlay" style="background: url('img/d1%20(2.html).jpg') no-repeat; background-position: center; background-attachment: fixed; background-size: cover;">
+		<div id="registerSection">
+			<div id="faqs">
+				<p><h1>Frequently Asked Questions</h1></p>
+			    <div class="box_parent">
+			    	<div class="box">
+			         <button class="accordion"> Is there any registration fee? </button>
+			           <div class="panel">
+			             <p class="text-light">No, there is no registration fees for either makers or visitors.</p>
+			           </div>
+			        </div>
+			     	<div class="box">
+			         <button class="accordion"> What is the duration of the event?  </button>
+			           <div class="panel">
+			             <p class="text-light">3 Days, 9th, 10th and 11th January 2020. The timings are from 10AM to 6PM.</p>
+			          </div>
+			     	</div>
+			     <div class="box">
+			      <button class="accordion"> What is the last date for registration? </button>
+			        <div class="panel">
+			            <p class="text-light">Last date for registration is 31st October, 2019.</p>
+			        </div>
+			    </div>
+			     <div class="box">
+			      <button class="accordion">How do I reach the venue?  </button>
+			        <div class="panel">
+			            <p class="text-light">Ghatkopar and Vidyavihar are the nearest Railway stations. Public transport is also easily available.</p>
+			        </div>
+			    </div>
+			     <div class="box">
+			      <button class="accordion">Will I get accommodation if I am travelling from outside Mumbai?  </button>
+			        <div class="panel">
+			            <p class="text-light">We will shortlist top 30 best projects whom we would provide all the logistics required. (Depends completely on the nature and the type of the project.) Kindly register and we would be happy to help you if your project falls under our shortlisted category. Accomodation is only for one maker + one companion (if any) per project.</p>
+			        </div>
+			    </div>
+			     <div class="box">
+			      <button class="accordion">Who is eligible to register?  </button>
+			        <div class="panel">
+			            <p class="text-light">Any person who thinks he has a groundbreaking idea or a concept and wishes to display his project/product in this Global Maker Initiative.</p>
+			        </div>
+			    </div>
+			     <div class="box">
+			      <button class="accordion"> What all can we display on our stalls? </button>
+			        <div class="panel">
+			            <p class="text-light">Any kind of project can be displayed (Art, Craft, IT, Hardware, Food, etc.).</p>
+			        </div>
+			    </div>
+			     <div class="box">
+			      <button class="accordion">Can the Makers sell their products?  </button>
+			        <div class="panel">
+			            <p class="text-light">Yes, once you get selected you can sell your product after paying Rs. 4000/- and products will be sold at your own dedicated Maker stall.</p>
+			        </div>
+			    </div>
+			     <div class="box">
+			      <button class="accordion">When will we get notification about selection?  </button>
+			        <div class="panel">
+			            <p class="text-light">Notifications will be given by mid-November.</p>
+			        </div>
+			    </div>
+			     <div class="box">
+			      <button class="accordion">What image should be uploaded on Team Profile if the project is handled by a single person? </button>
+			        <div class="panel">
+			           <p class="text-light">In this case, only the image of the Maker or the Maker along with his project can be uploaded.</p>
+			        </div>
+			    </div>
+			    </div>
+
+				</div>
+		</div>
+	</div>
+
+<!-- FAQs ends -->
+
+<!-- Partner section -->
+
+<div id="partner">
+	<div id="partnercontainer">
+		<div id="partnerTitle">
+			<h1>OUR PARTNERS</h1>
+		</div>
+		<div id="partnerBody">
+
+			<div class="partnerBox">
+			    <p style="text-align: center; font-size: 16px; font-family: sans-serif; color: #666;">An Initiative of</p>
+				<a href="http://somaiya.edu/"><img src="img/svv.png" style="width: 80px; height: auto;"><img src="img/trust.png" style="width: 80px; height: auto;"></a>
+				<a href="http://somaiya.edu/"></a>
+			</div>
+
+			<div class="partnerBox">
+			    <p style="text-align: center; font-size: 16px; font-family: sans-serif; color: #666;">Organized by</p>
+				<a href="http://www.riidl.org/"><img src="img/riidl.png" style="width: 100px; height: auto;"></a>
+			</div>
+		</div>
+		<div id="partnerBody">
+
+			<div class="partnerBox">
+			    <p style="text-align: center; font-size: 16px; font-family: sans-serif; color: #666;">Paper Partner</p>
+				<a href="http://www.sunfinepapers.com/"><img src="img2020/sponsor/sun.png" style="width: 240px; height: auto; max-width:250px; flex: 1; margin: auto; width: 100%;"></a>
+			</div>
+			
+			<div class="partnerBox">
+			    <p style="text-align: center; font-size: 16px; font-family: sans-serif; color: #666;">Stationary Partner</p>
+				<a href="#"><img src="img2020/sponsor/numic.png" style="width: 240px; height: auto; max-width:250px; flex: 1; margin: auto; width: 100%;"></a>
+			</div>
+
+			<div class="partnerBox">
+			    <p style="text-align: center; font-size: 16px; font-family: sans-serif; color: #666;">Fashion, Co-Sponsor Bio Fashion Show</p>
+				<a href="#"><img src="img2020/sponsor/ishan.jpg" style="width: 150px; height: auto; max-width:250px; flex: 1; margin: auto; width: 100%;"></a>
+			</div>
+			
+		</div>
+		<div id="partnerBody">
+           <!-- <div class="partnerBox">
+					<a href="http://vigyanashram.com">
+						<div class="pubImage">
+							<img src="img2020/sponsor/hunk.png">
+						</div>
+						<p style="text-align: center; font-size: 16px; font-family: sans-serif; color: #666;">Hydration</p>
+					</a>
+				</div>
+            
+            <div class="partnerBox">
+					<a href="http://spintaccel.com/">
+						<div class="pubImage">
+							<img src="img/partners/METRO COUPONZ.png">
+						</div>
+						<p style="text-align: center; font-size: 16px; font-family: sans-serif; color: #666;">Coupon Partner</p>
+					</a>
+			</div>
+			
+			<div class="partnerBox">
+					<a href="https://www.chaturideas.com/">
+						<div class="pubImage">
+							<img src="img/partners/carnival.jpg">
+						</div>
+						<p style="text-align: center; font-size: 16px; font-family: sans-serif; color: #666;">Cinema Partner</p>
+					</a>
+			</div>-->
+            
+            
+            
+			<div class="partnerBox">
+			    <p style="text-align: center; font-size: 16px; font-family: sans-serif; color: #666;">Hydration</p>
+				<a href="#"><img src="img2020/sponsor/hunk.png" style="width: 150px; height: auto; max-width:250px; flex: 1; margin: auto; width: 100%;"></a>
+			</div>
+
+			<div class="partnerBox">
+			    <p style="text-align: center; font-size: 16px; font-family: sans-serif; color: #666;">Coupon Partner</p>
+				<a href="https://metrocouponzindia.com/"><img src="img/partners/METRO%20COUPONZ.png" style="width: 150px; height: auto; max-width:250px; flex: 1; margin: auto; width: 100%;"></a>
+			</div>
+
+			<div class="partnerBox">
+			    <p style="text-align: center; font-size: 16px; font-family: sans-serif; color: #666;">Cinema Partner</p>
+				<a href="https://www.carnivalcinemas.com/"><img src="img/partners/carnival.jpg" style="width: 120px; height: auto; max-width:250px; flex: 1; margin: auto; width: 100%;"></a>
+			</div>
+		</div>
+		<div id="partnerBody">
+
+			<div class="partnerBox">
+			    <p style="text-align: center; font-size: 16px; font-family: sans-serif; color: #666;">Power Snack Partner</p>
+				<a href="https://maxprotein.in/"><img src="img2020/sponsor/max.jpg" style="width: 180px; height: auto; max-width:250px; flex: 1; margin: auto; width: 100%;"></a>
+
+			</div>
+
+			<div class="partnerBox">
+			    <p style="text-align: center; font-size: 16px; font-family: sans-serif; color: #666;">Radio Partner</p>
+				<a href="https://onlineradiobox.com/in/redfm935/"><img src="img2020/sponsor/redfm.jpg" style="width: 180px; height: auto; max-width:250px; flex: 1; margin: auto; width: 100%;"></a>
+			</div>
+			
+			<div class="partnerBox">
+			    <p style="text-align: center; font-size: 16px; font-family: sans-serif; color: #666;">Banking Partner</p>
+				<a href="https://www.kotak.com/en.html"><img src="img2020/sponsor/kotak.jpg" style="width: 180px; height: auto; max-width:250px; flex: 1; margin: auto; width: 100%;"></a>
+			</div>
+		</div>
+		<!--<div id="partnerBody">-->
+		<!--	<div class="partnerBox">-->
+		<!--	    <p style="text-align: center; font-size: 16px; font-family: sans-serif; color: #666;">Merchandise Partner</p>-->
+		<!--		<a href="http://festpav.com/"><img src="img/partners/brand.png" style="width: 160px; height: auto;"></a>-->
+
+		<!--	</div>-->
+		<!--</div>-->
+		<!--	<div class="partnerBox">-->
+		<!--		<a href="https://www.onspon.com/"><img src="img/partners/onspon.jpg"></a>-->
+
+		<!--	</div>-->
+
+		<!--	<div class="partnerBox">-->
+		<!--		<a href="http://ohcampus.com/v2/"><img src="img/partners/ohcampus.png"></a>-->
+
+		<!--	</div>-->
+
+		<!--	<div class="partnerBox">-->
+		<!--		<a href="http://iyouthmagblog.blogspot.com/"><img src="img/partners/iyouthmag.jpeg" style="width: 180px; height: auto;"></a>-->
+
+		<!--	</div>-->
+		<!--</div>-->
+		<!--<div id="partnerBody">-->
+
+		<!--	<div class="partnerBox">-->
+		<!--		<a href="https://www.brainbuxa.com/"><img src="img/partners/brainbuxa.jpg" style="width: 150px; height: auto;"></a>-->
+
+		<!--	</div>-->
+
+		<!--	<div class="partnerBox">-->
+		<!--		<a href="https://awesong.in/"><img src="img/partners/awesong.png" style="width: 180px; height: auto;"></a>-->
+
+		<!--	</div>-->
+
+		<!--	<div class="partnerBox">-->
+		<!--		<a href="http://aarohancommunications.com/website/"><img src="img/partners/aaraohan.jpg" style="width: 180px; height: auto;"></a>-->
+
+		<!--	</div>-->
+		<!--</div>-->
+	    <!--   <div id="partnerBody">-->
+
+		<!--	<div class="partnerBox">-->
+		<!--		<a href="http://www.haldirams.com/"><img src="img/partners/haldiram.jpg" style="width: 150px; height: auto;"></a>-->
+
+		<!--	</div>-->
+
+		<!--	<div class="partnerBox">-->
+		<!--		<a href="https://www.gizmobaba.in/"><img src="img/partners/gizmobaba.jpg"></a>-->
+
+		<!--	</div>-->
+
+		<!--	<div class="partnerBox">-->
+		<!--		<a href="https://pharmeasy.in/"><img src="img/partners/pharmeasy.jpg"></a>-->
+
+		<!--	</div>-->
+		<!--</div>-->
+		<!--<div id="partnerBody">-->
+
+		<!--	<div class="partnerBox">-->
+		<!--		<a href="https://metrocouponzindia.com/"><img src="img/partners/metrocouponz.png"></a>-->
+
+		<!--	</div>-->
+
+		<!--	<div class="partnerBox">-->
+		<!--		<a href="https://frapp.in/"><img src="img/partners/frapp.png" style="width: 180px; height: auto;"></a>-->
+
+		<!--	</div>-->
+
+		<!--	<div class="partnerBox">-->
+		<!--		<a href="https://techstory.in/"><img src="img/partners/techstory.png" style="width: 180px; height: auto;"></a>-->
+
+		<!--	</div>-->
+		<!--</div>-->
+		<!--<div id="partnerBody">-->
+
+
+		<!--	<div class="partnerBox">-->
+		<!--		<a href="https://www.linkedin.com/authwall?trk=gf&trkInfo=AQFPJWdKVYdsywAAAWYNedB4lJHp8dPuaqRaKEKQ3RemIgcSFLevvNHkjHXJyHnxJbrT774zon5qE0XbwQMNMOfTiR6w06EjT6P8umTBy9a0WyMcXW6N6vPfZ4JqU6pJCm_Fs1Q=&originalReferer=http://makermela.com/&sessionRedirect=https%3A%2F%2Fwww.linkedin.com%2Fin%2Fnikunjladani%2F"><img src="img/partners/nikunj.png"></a>-->
+
+		<!--	</div>-->
+
+		<!--	<div class="partnerBox">-->
+		<!--		<a href="http://www.ibg.org.in/"><img src="img/partners/ibg.png" style="width: 180px; height: auto;"></a>-->
+
+		<!--	</div>-->
+
+		<!--	<div class="partnerBox">-->
+		<!--		<a href="https://metrocouponzindia.com/"><img src="img/partners/O'cean Logo.jpg"></a>-->
+
+		<!--	</div>-->
+		<!--</div>-->
+		<!--<div id="partnerBody">-->
+
+		<!--	<div class="partnerBox">-->
+		<!--		<a href="http://www.frontage.media/"><img src="img/partners/frontage media.png" style="width: 180px; height: auto;"></a>-->
+
+		<!--	</div>-->
+
+		<!--	<div class="partnerBox">-->
+		<!--		<a href="https://zebronics.com/"><img src="img/partners/zebronics.jpg" style="width: 180px; height: auto;"></a>-->
+
+		<!--	</div>-->
+
+		<!--	<div class="partnerBox">-->
+		<!--		<a href="http://www.smokinjoespizza.com/"><img src="img/partners/Smokin Joes.jpg" style="width: 180px; height: auto;"></a>-->
+
+		<!--	</div>-->
+		<!--</div>-->
+		<!--<div id="partnerBody">-->
+
+		<!--	<div class="partnerBox">-->
+		<!--		<a href="http://envisalon.in/"><img src="img/partners/envi.jpg" style="width: 180px; height: auto;"></a>-->
+
+		<!--	</div>-->
+
+		<!--	<div class="partnerBox">-->
+		<!--		<a href="https://www.facebook.com/squareoneVR/"><img src="img/partners/squareone.jpg" style="width: 180px; height: auto;"></a>-->
+
+		<!--	</div>-->
+
+		<!--	<div class="partnerBox">-->
+		<!--		<a href="https://www.kokuyocamlin.com/"><img src="img/partners/camlin.png" style="width: 180px; height: auto;"></a>-->
+
+		<!--	</div>-->
+		<!--</div>-->
+		<!--<div id="partnerBody">-->
+
+		<!--	<div class="partnerBox">-->
+		<!--		<a href="https://www.kotak.com/en.html"><img src="img/partners/Kotak_Mahindra_Bank_logo.png" style="width: 180px; height: auto;"></a>-->
+
+		<!--	</div>-->
+
+		<!--	<div class="partnerBox">-->
+		<!--		<a href="https://www.coca-colacompany.com/"><img src="img/partners/cocacola.png" style="width: 180px; height: auto;"></a>-->
+
+		<!--	</div>-->
+
+		<!--	<div class="partnerBox">-->
+		<!--		<a href="https://www.joister.net/"><img src="img/partners/Joispot-Logo.png" style="width: 180px; height: auto;"></a>-->
+
+		<!--	</div>-->
+		<!--</div>-->
+		<!--<div id="partnerBody">-->
+
+		<!--	<div class="partnerBox">-->
+		<!--		<a href="http://www.somaiya.com/"><img src="img/partners/GBL Logo.jpg"></a>-->
+
+		<!--	</div>-->
+
+		<!--	<div class="partnerBox">-->
+		<!--		<a href="https://www.facebook.com/Elegance-Creative-Studio-138966696776146/?pnref=story.unseen-section"><img src="img/partners/elegance.jpg" style="width: 180px; height: auto;"></a>-->
+
+		<!--	</div>-->
+
+		<!--	<div class="partnerBox">-->
+		<!--		<a href="https://www.motul.com/in/en"><img src="img/partners/motul.png" style="width: 180px; height: auto;"></a>-->
+
+		<!--	</div>-->
+		<!--</div>-->
+	</div>
+
+</div>
+<!-- Section Partner ends -->
+
+<!-- <div id="publications">
+	<div id="pcontainer">
+		<div id="publicationsTitle">
+			<h1>Previous year's PUBLICATIONS</h1>
+		</div>
+
+		<div id="publicationsBody">
+
+			<div class="publicationsBox">
+				<a href="publications/techstory_mm.jpg">
+					<div class="pubImage">
+						<img src="img/Publications/techstory.jpg">
+					</div>
+					<div class="pubText">
+						<p class="publicationsHead">Tech Story</p>
+						<p class="publicationsText">Somaiya riidl's Maker Mela 2018 to showcase 100 teams from across the country</p>
+					</div>
+				</a>
+			</div>
+
+
+				<div class="publicationsBox">
+					<a href="publications/divya_bhaskar_mm.png">
+						<div class="pubImage">
+							<img src="img/Publications/Divya_Bhaskar_Logo.png">
+						</div>
+						<div class="pubText">
+							<p class="publicationsHead">Divya Bhaskar</p>
+							<p class="publicationsText">100 teams participating in Somaiya riidl's Maker Mela</p>
+						</div>
+					</a>
+				</div>
+
+				<div class="publicationsBox">
+					<a href="publications/saamna-mm18.jpg">
+						<div class="pubImage">
+							<img src="img/Publications/saamna.png">
+						</div>
+						<div class="pubText">
+							<p class="publicationsHead">Saamna</p>
+							<p class="publicationsText">Maker Mela at Somaiya college gathering 100 team</p>
+						</div>
+					</a>
+				</div>
+
+				<div class="publicationsBox">
+					<a href="publications/toi.jpg">
+						<div class="pubImage">
+							<img src="img/Publications/the-times-of-india.png">
+						</div>
+						<div class="pubText">
+							<p class="publicationsHead">Times of India</p>
+							<p class="publicationsText">A stage to share ideas on innovationand technology</p>
+						</div>
+					</a>
+				</div>
+
+				<div class="publicationsBox">
+					<a href="publications/mt.jpg">
+						<div class="pubImage">
+							<img src="img/Publications/logo_maharashtra_times.gif">
+						</div>
+						<div class="pubText">
+							<p class="publicationsHead">Maharashtra Times</p>
+							<p class="publicationsText">Amazing Makers' Mela</p>
+						</div>
+					</a>
+				</div>
+
+				<div class="publicationsBox">
+					<a href="publications/dna%20pub.jpg">
+						<div class="pubImage">
+							<img src="img/Publications/dna.jpg">
+						</div>
+						<div class="pubText">
+							<p class="publicationsHead">DNA</p>
+							<p class="publicationsText">Innovators have a field day at fair</p>
+						</div>
+					</a>
+				</div>
+
+				<div class="publicationsBox">
+					<a href="publications/MID.pdf">
+						<div class="pubImage">
+							<img src="img/Publications/MID.gif">
+						</div>
+						<div class="pubText">
+							<p class="publicationsHead">Mid Day</p>
+							<p class="publicationsText">Maker Mela: Celebrating innovation and entrepreneurship across craft, engineering and science</p>
+						</div>
+					</a>
+				</div>
+
+				<div class="publicationsBox">
+					<a href="publications/navbharat.jpg">
+						<div class="pubImage">
+							<img src="img/Publications/nava_logo.jpg">
+						</div>
+						<div class="pubText">
+							<p class="publicationsHead">Navabharat Times</p>
+							<p class="publicationsText">Technology made Maker Mela a big hit</p>
+						</div>
+					</a>
+				</div>
+
+				<div class="publicationsBox">
+					<a href="publications/prahar.jpg">
+						<div class="pubImage">
+							<img src="img/Publications/prahaar-logo1.png">
+						</div>
+						<div class="pubText">
+							<p class="publicationsHead">Prahaar</p>
+							<p class="publicationsText">Somaiya Vidyavihar has gathered makers from all over the country in a maker foundation, named as 'Maker Mela'</p>
+						</div>
+					</a>
+				</div>
+
+				<div class="publicationsBox">
+					<a href="publications/www_scoop_it_t_news_attitude_q_maker_mela.pdf">
+						<div class="pubImage" >
+							 <img src="img/Publications/scoopit.png">
+						</div>
+						<div class="pubText">
+							<p class="publicationsHead">Scoop.it</p>
+							<p class="publicationsText">Somaiya Vidyavihar and Maker India Foundation launch Maker Mela news alert</p>
+						</div>
+					</a>
+				</div>
+
+				<div class="publicationsBox">
+					<a href="publications/ht.png">
+						<div class="pubImage">
+							 <img src="img/Publications/hindustan.png">
+						</div>
+						<div class="pubText">
+							<p class="publicationsHead">Hindustan Times</p>
+							<p class="publicationsText">Innovative minds eye biz opportunities</p>
+						</div>
+					</a>
+				</div>
+
+				<div class="publicationsBox">
+					<a href="publications/Jaihind_Ahm_MakerMela_30.11.16_pg08.docx.pdf">
+						<div class="pubImage">
+							 <img src="img/Publications/jaihind.png">
+						</div>
+						<div class="pubText">
+							<p class="publicationsHead">Jai Hind</p>
+							<p class="publicationsText">Inaugration of Maker Mela event in the city</p>
+						</div>
+					</a>
+				</div>
+
+				<div class="publicationsBox">
+					<a href="publications/Sandesh_Ahm_MakerMela_30.11.16_pg02.docx.pdf">
+						<div class="pubImage">
+							 <img src="img/Publications/sandesh_logo_white.png">
+						</div>
+						<div class="pubText">
+							<p class="publicationsHead">Sandesh</p>
+							<p class="publicationsText"> </p>
+						</div>
+					</a>
+				</div>
+
+				<div class="publicationsBox">
+					<a href="publications/SUryakal_Ahm_MakerMela_30.11.16_pg02.jpg.docx.pdf">
+						<div class="pubImage">
+							 <img src="img/Publications/suryakal.png">
+						</div>
+						<div class="pubText">
+							<p class="publicationsHead">Suryakal</p>
+							<p class="publicationsText"> </p>
+						</div>
+					</a>
+				</div>
+
+				<div class="publicationsBox">
+					<a href="publications/WesternTimes_Ahm_MakerMela_30.11.16_pg07.jpg.docx.pdf">
+						<div class="pubImage">
+							 <img src="img/Publications/westerntimes.png">
+						</div>
+						<div class="pubText">
+							<p class="publicationsHead">Western Times</p>
+							<p class="publicationsText"> </p>
+						</div>
+					</a>
+				</div>
+
+				<div class="publicationsBox">
+					<a href="publications/FreePressGujarat_Ahm_MakerMela_30.11.16_pg03.docx.pdf">
+						<div class="pubImage">
+							 <img src="img/Publications/freepress.jpg">
+						</div>
+						<div class="pubText">
+							<p class="publicationsHead">Freepress</p>
+							<p class="publicationsText">Maker Mela, the premier event for grass root innovators in India has announced its call for Ahmedabad</p>
+						</div>
+					</a>
+				</div>
+
+				<div class="publicationsBox">
+					<a href="publications/GujaratToday_Ahm_MakerMela_30.11.16_pg13.docx.pdf">
+						<div class="pubImage">
+							 <img src="img/Publications/gujarattoday-logo.jpg" style="width: 100px; height: 40px;">
+						</div>
+						<div class="pubText">
+							<p class="publicationsHead">Gujarattoday</p>
+							<p class="publicationsText">For the basic innovation in India, Maker Mela puts efforts</p>
+						</div>
+					</a>
+				</div>
+
+				<div class="publicationsBox">
+					<a href="publications/Lokmitra_Ahm_MakerMela_30.11.16_pg03.jpg.docx.pdf">
+						<div class="pubImage">
+							 <img src="img/Publications/lokmitra.jpg">
+						</div>
+						<div class="pubText">
+							<p class="publicationsHead">Lokmitra</p>
+							<p class="publicationsText">Announcement of the event, Maker Mela</p>
+						</div>
+					</a>
+				</div>
+			</div>
+	</div>
+</div> -->
+
+
+<!-- Section Publication ends -->
+
+<!-- Contact Us started -->
+<div id="registerOverlay">
+<div class="main-box" id="registerSection">
+      <div class="outer-box">
+        
+        <h1>CONTACT US</h1>
+        
+        <div class="container-box">
+          
+          <div class="container-part">
+            <form action="http://makermela.com/contact.php" method="post">
+              <input class="contactForm" type="text" placeholder="Name" name="name" required>
+              <input class="contactForm" type="text" placeholder="Email ID" name="mail" required>
+              <textarea class="contactForm" placeholder="Message" name="comment" required></textarea>
+               <input type="submit" class="button button-edit" value="Submit">
+            </form>
+          </div>
+          
+          <div class="container-part">
+            <div id="map-container" class="z-depth-1-half map-container mb-5"></div>
+            
+            <div class="details">
+              <div>
+                <p><i class="fa fa-map-marker  prefix teal-text fa-2x"></i></p><p> Somaiya Vidyavihar, 520 RiiDL Bhaskarachraya, Vidyavihar</p>
+              </div>
+              <div>
+                <p><i class=" fa fa-envelope prefix teal-text fa-2x"></i></p><p id="k">makermela@somaiya.edu</p>
+              </div>
+              <div>
+                <p><i class="fa fa-phone prefix teal-text  fa-2x"></i></p>
+                <p>Mansvi +91 702-184-3551</p>
+                <p>Darshan +91 816-917-8387</p>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+       
+      </div>
+    </div>
+</div>
+<!-- Contact Us Ended-->
+
+
+<!-- Footer starts -->
+
+<div class="footer">
+	<p>Copyright &copy; Maker Mela</p>
+	<div class="footerIcons">
+		<a href="https://twitter.com/makermelaindia"><i class="fa fa-twitter" style="color: #fff;"></i></a>
+		<a href="https://www.facebook.com/makermela/"><i class="fa fa-facebook" style="color: #fff;"></i></a>
+		<a href="https://www.instagram.com/makermela/"><i class="fa fa-instagram" style="color: #fff;"></i></a>
+	</div>
+	<p>makermela@somaiya.edu</p>
+</div>
+
+<!-- Footer ends -->
+
+<script>
+function myFunction() {
+	var x = document.getElementById("myTopnav");
+	if (x.className === "topnav") {
+			x.className += " responsive";
+			}
+	else {
+			x.className = "topnav";
+			}
+	}
+</script>
+
+  <script>
+						function myMap() {
+						  var myCenter = new google.maps.LatLng(19.073515,72.899544);
+						  var mapCanvas = document.getElementById("map-container");
+						  var mapOptions = {center: myCenter, zoom: 17};
+						  var map = new google.maps.Map(mapCanvas, mapOptions);
+						  var marker = new google.maps.Marker({position:myCenter});
+						  marker.setMap(map);
+						}
+				</script>
+				<script src="https://maps.googleapis.com/maps/api/js?callback=myMap&amp;key=AIzaSyAk_WZV-2xOAL0W6DpHhGDMtaMshTlzvmw"></script>
+  
+<!-- Scroll reveal is used to reveal content after they enter the viewport-->
+ <script src="scrollreveal.min.js"></script>
+
+<script>
+
+	window.sr = ScrollReveal({reset: true });
+	window.sr = ScrollReveal({reset: true });
+</script>
+
+
+<script>
+
+	sr.reveal('#headText', {duration: 500, origin: 'bottom', scale: 0.5});
+	sr.reveal('.benefitBox', {duration: 500, origin: 'bottom', scale: 0.5});
+
+	sr.reveal('#speakerTitle', {duration: 500, origin: 'right', scale: 0.5});
+	sr.reveal('.speakerBox', {duration: 1000, origin: 'left', scale: 0.5});
+
+	sr.reveal('.single-column', {duration: 1000, origin: 'left', scale: 0.5});
+
+	sr.reveal('#faqs', {duration: 1000, origin: 'left', scale: 0.5});
+	sr.reveal('.accordion', {duration: 1000, origin: 'left', scale: 0.5});
+
+
+	sr.reveal('.maprscontainer', {duration: 500, origin: 'right', scale: 0.5});
+	sr.reveal('.mapLeftContainer', {duration: 1000, origin: 'left', scale: 0.5});
+
+	sr.reveal('#registerContainer', {duration: 500, origin: 'right', scale: 0.5});
+	sr.reveal('.methodBox', {duration: 1000, origin: 'left', scale: 0.5});
+
+	sr.reveal('#partnerTitle', {duration: 500, origin: 'right', scale: 0.5});
+	sr.reveal('.partnerBox', {duration: 1000, origin: 'left', scale: 0.5});
+
+	sr.reveal('#publicationsTitle', {duration: 500, origin: 'right', scale: 0.5});
+	sr.reveal('.publicationsBox', {duration: 1000, origin: 'left', scale: 0.5});
+</script>
+
+<script type="text/javascript">
+        var acc = document.getElementsByClassName("accordion");
+    var panel = document.getElementsByClassName('panel');
+
+    for (var i = 0; i < acc.length; i++) {
+        acc[i].onclick = function() {
+            var setClasses = !this.classList.contains('active');
+            setClass(acc, 'active', 'remove');
+            setClass(panel, 'show', 'remove');
+            if (setClasses) {
+                this.classList.toggle("active");
+                this.nextElementSibling.classList.toggle("show");
+            }
+        }
+    }
+
+    function setClass(els, className, fnName) {
+        for (var i = 0; i < els.length; i++) {
+            els[i].classList[fnName](className);
+        }
+    }
+
+    </script>
+<!-- 
+         <div id="id93"  class="w3-modal" style="padding: 2%;">
+				<div class="w3-modal-content  w3-animate-zoom" style="max-width:700px">
+					<div onclick="document.getElementById('id93').style.display='none'" class="cancelx">&times;</div>
+					<div class="w3-center"><br>
+						<img src="img2020/speaker/maltman.png" alt="Avatar" style="width:30%" class="w3-margin-top">
+					</div>
+					<h2>Miltch Altman</h2>
+					<p> Miltch Altman is a San Francisco-based hacker and inventor, best known for inventing TV-B-Gone. He is also Chief Scientist and CEO of Cornfield Electronics.</p>
+					</div>
+				</div>
+            <div id="id90"  class="w3-modal" style="padding: 2%;">
+					<div class="w3-modal-content  w3-animate-zoom" style="max-width:600px">
+						<div onclick="document.getElementById('id90').style.display='none'" class="cancelx">&times;</div>
+						<div class="w3-center"><br>
+							<img src="img2020/speaker/mehakm.png" alt="Avatar" style="width:30%" class="w3-margin-top">
+						</div>
+						<h2>Mehak Mirza Prabhu</h2>
+						<p>Mehak Mirza Prabhu, born in 1982, is a writer and story teller from Mumbai, who creates fictional stories in multiple languages. The audio story telling through voice modulations is one of her unique strength. She is a blogger, script writer, social enthusiast also; who runs an online story telling school named <q>Jhumritaliaya</q>, dedicated towards merging art form of classic story telling with original stories that reflects recent trends in modern times. 
+						She was an entrepreneur few years back, but now she is a full-time writer, storyteller, voice over artist, performer, mentor.Her story telling act <q>Zoya Ki Diwali</q>, songs by Mohammad Muneem, was listed as the <q>Top 10 theatre acts of 2017</q> by the Mumbai Theatre Guide.
+                        Her story <q>Phir Mohobbat Karni Hai</q>, performed at an event organised by <q>YourQuote</q> in collaboration with Tinder, has gained over 5 Million views, across various digital platforms. Mehak Mirza Prabhu, born in 1982, is a writer and story teller from Mumbai, who creates fictional stories in multiple languages. The audio story telling through voice modulations is one of her unique strength. She is a blogger, script writer, social enthusiast also; who runs an online story telling school named <q>Jhumritaliaya</q>, dedicated towards merging art form of classic story telling with original stories that reflects recent trends in modern times.
+She was an entrepreneur few years back, but now she is a full-time writer, storyteller, voice over artist, performer, mentor.
+Her story telling act <q>Zoya Ki Diwal</q>, songs by Mohammad Muneem, was listed as the <q>Top 10 theatre acts of 2017</q> by the Mumbai Theatre Guide.
+Her story <q>Phir Mohobbat Karni Hai</q>, performed at an event organised by <q>YourQuote</q> in collaboration with Tinder, has gained over 5 Million views, across various digital platforms.
+She collaborates with Mohammad Muneem for story telling duet form. Their story telling act on child abuse was recently performed at IIT, Bombay. Their recent show; <q>Valentines Day Special Set</q> in Indore was featured in the Dainak Bhaskar. She has performed alongside legendary artist Piyush Mishra at an event in Jaipur. She has been featured in Bombay Times, Times of India, Being Indian, The Logical Indian to name a few.
+Her Tedx talk on <q>How Story Telling Saved M</q> has been highly appreciated.
+Mehak is also a social reform enthusiast and has featured in the campaign <q>The Bridge Talks</q> by Caravan Magazine.
+Apart from the events, Mehak puts up regular intimate story telling shows in Hindi, Marathi and Urdu across Mumbai Metropolitan City.
+She conducts workshops of her story telling school <q>Jhumritaliaya</q> aiming at creating story tellers out of common people from their day to day observations and imagination in their mother tongue.
+She recently in collaboration with KalArt for telling a beautiful stroy <q>Ammi ka Mobile Phone</q>. We always hear the term <q>Aaj Kal Ke Bacche</q> used in a negative way. This story came a handy of breaking this notion and showing that there exists another side to every coin. It is a story surrounding the basic emotions that run through every family. Click here to watch the video now.</p>
+					</div>
+				</div>
+			<div id="id91"  class="w3-modal" style="padding: 2%;">
+					<div class="w3-modal-content  w3-animate-zoom" style="max-width:600px">
+						<div onclick="document.getElementById('id91').style.display='none'" class="cancelx">&times;</div>
+						<div class="w3-center"><br>
+							<img src="img2020/speaker/amenon.png" alt="Avatar" style="width:30%" class="w3-margin-top">
+						</div>
+						<h2>anjali menon</h2>
+						<p>Design Entrepreneur | Co-founder at Gudgudee | Forbes India 30 under 30 Gudgudee is a design studio started by Aditi Agrawal and myself both alumnae of the National Institute of Design, Ahmedabad.
+Playgrounds haven't changed since decades! it's time to think beyond the typical swings and slides.  Gudgudee  is re-inventing playgrounds in India. We design and build playgrounds that are innovative, safe, easy to maintain, developmentally appropriate and exciting for both children and adults. We have worked with top schools, real estate developers, NGO's and local governments.
+</p>
+					</div>
+				</div>
+				<div id="id92"  class="w3-modal" style="padding: 2%;">
+					<div class="w3-modal-content  w3-animate-zoom" style="max-width:600px">
+						<div onclick="document.getElementById('id92').style.display='none'" class="cancelx">&times;</div>
+						<div class="w3-center"><br>
+							<img src="img2020/speaker/ntanna1.png" alt="Avatar" style="width:30%" class="w3-margin-top">
+						</div>
+						<h2>namrata tanna</h2>
+						<p>A former television journalist, Namrata moved to the social sector 10 years ago, to use her journalism skills for good.
+She has worked with Mumbai-based NGOs Concern India Foundation and iVolunteer and also co-founded an initiative called Creatives Against Poverty 
+She recently launched a social enterprise called Cooked by Moms that brings healthy, home-cooked meals, cooked by moms, to businesses and workplaces, thus empowering underprivileged women using their cooking skills.
+Namrata also plays the role of advisor to several NGOs and companies with regards to their CSR activities as an independent communications & development consultant. </p>
+					</div>
+				</div>
+				<div id="id08"  class="w3-modal" style="padding: 2%;">
+					<div class="w3-modal-content  w3-animate-zoom" style="max-width:600px">
+						<div onclick="document.getElementById('id08').style.display='none'" class="cancelx">&times;</div>
+						<div class="w3-center"><br>
+							<img src="img2020/panel/paulam.png" alt="Avatar" style="width:30%" class="w3-margin-top">
+						</div>
+						<h2>Paula mariwala</h2>
+						<p>Founder/Co-President, Stanford Angels & Entrepreneurs India MD, Seedfund Advisors Director, Hinditron BoM, Krea Universiy. 
+A physicist by training, she has also been a technologist, business woman, investor, mentor and philantrophist. She has been an active early stage investor for the past 15 years and she looks for innovative companies which create an impact. She is passionate about education, gender equality, entrepreneurship and using technology for creating sustainable solutions which can improve quality of lives of people.  
+An alumnus of Stanford University, Paula brings over 20-years of entrepreneurial and operational experience with technology companies in the USA and in India. In her role as Executive Director since inception of Seedfund, Paula has been actively involved with the entrepreneurial ecosystem in India to source, evaluate and mentor early stage companies.  Her primary focus is on education, healthcare and technology sectors and she works closely with portfolio companies to take them to their next stage of growth.
+ 
+Paula is a Promoter Director on the Board of The Hinditron Group, one of India’s pioneering technology companies, where she has been responsible for starting and managing the Telecommunication and Instrumentation businesses of the Group.  In the past, Paula has worked with companies like Photon Kinetics, Tektronix, and Optivideo, in the USA. She has several publications and patents to her credit in the fields of Astrophysics and Optical Communication. Paula is actively engaged with the entrepreneurial ecosystem through her association with professional bodies like TiE (Charter Member), TiE Stree Shakti (Core Team), Dell Women Entrepreneurs Network, Indian Merchants Chamber, IEEE (Life Member), Computer Society of India, Stanford University Alumni Association. 
+ 
+Paula holds an MS in Applied Physics from Stanford University, USA and BSc in Physics from St. Xaviers college, Mumbai. She is on the Board of Advisors of St. Xaviers College, K.J.Somaiya College of Engineering and is involved in various capacities with academic institutions and business incubators.
+</p>
+					</div>
+				</div>
+				<div id="id94"  class="w3-modal" style="padding: 2%;">
+					<div class="w3-modal-content  w3-animate-zoom" style="max-width:600px">
+						<div onclick="document.getElementById('id94').style.display='none'" class="cancelx">&times;</div>
+						<div class="w3-center"><br>
+							<img src="img2020/panel/mshah.png" alt="Avatar" style="width:30%" class="w3-margin-top">
+						</div>
+						<h2>Maitri shah</h2>
+						<p>Founder/ Chief Enthusiasm Officer at Mind Assets. Mind Assets is an EdTech startup. They focus on integrating the differently abled society with mainstream society. They offer a wide range of products that facilitate this through counselling to job opportunities by leveraging tech. They enable mentors to by networking, connecting and rising beyond. She is an Entrepreneur living 
+						in India who also happens to be a painter, an avid classical music lover, a computer science engineer and uses a wheelchair to overcome her disability.</p>
+					</div>
+				</div>
+				<div id="id95"  class="w3-modal" style="padding: 2%;">
+					<div class="w3-modal-content  w3-animate-zoom" style="max-width:600px">
+						<div onclick="document.getElementById('id95').style.display='none'" class="cancelx">&times;</div>
+						<div class="w3-center"><br>
+							<img src="img2020/panel/bpandya.png" alt="Avatar" style="width:30%" class="w3-margin-top">
+						</div>
+						<h2>bhavna pandya</h2>
+						<p> Masters in Science (Microbiology) Innovation Catalyst. </p>
+					</div>
+				</div>
+				<div id="id96"  class="w3-modal" style="padding: 2%;">
+					<div class="w3-modal-content  w3-animate-zoom" style="max-width:600px">
+						<div onclick="document.getElementById('id96').style.display='none'" class="cancelx">&times;</div>
+						<div class="w3-center"><br>
+							<img src="img2020/influencer/i3.jpg" alt="Avatar" style="width:30%" class="w3-margin-top">
+						</div>
+						<h2>mr. akash Manoj</h2>
+						<p>Akash Manoj has done a research titled "Non-invasive Self Detection of Asymptomatic Myocardial Infarction using BioElectrics". He is presently studying in Class 11 at The Ashok Leyland School. Akash was awarded a Gold medal for National Child Award for Exceptional Achievement 2017 by President Ram Nath Kovind. Moreover, he was also awarded by President Pranab Mukherjee in March 2017 for his research. Akash believes that this device can be used for the greater good by saving many lives, especially of those living in the rural areas who do not have easy access to a hospital.
+
+						He has already filed for the patent since he wants the Indian government to use the project for the public good instead of selling it to a private firm. Akash wants to pursue cardiology and study in the All India Institute of Medical Sciences in Delhi in the future.</p>
+					</div>
+				</div>
+				<div id="id97"  class="w3-modal" style="padding: 2%;">
+					<div class="w3-modal-content  w3-animate-zoom" style="max-width:600px">
+						<div onclick="document.getElementById('id97').style.display='none'" class="cancelx">&times;</div>
+						<div class="w3-center"><br>
+							<img src="img2020/influencer/i2.png" alt="Avatar" style="width:30%" class="w3-margin-top">
+						</div>
+						<h2>mr. sambhaji patil</h2>
+						<p>Sambhaji Patil Nilangekar is a member of 13th  Maharashtra Legislative Assembly of Maharashtra and represents Nilanga (Vidhan Sabha Constituency). He is a member of the Bharatiya Janata Party (BJP) & RSS and also the General Secretary of the Maharashtra State Unit of the BJP. He is also Gradian minister or district in-charge minister of Latur. He is the cabinet Minister of Maharashtra Labour, Skill Development, Earthquake Rehabilitation & Ex-Servicemen Welfare since 8 July 2016.</p>
+					</div>
+				</div>
+				<div id="id98"  class="w3-modal" style="padding: 2%;">
+					<div class="w3-modal-content  w3-animate-zoom" style="max-width:600px">
+						<div onclick="document.getElementById('id98').style.display='none'" class="cancelx">&times;</div>
+						<div class="w3-center"><br>
+							<img src="img2020/influencer/i1.png" alt="Avatar" style="width:30%" class="w3-margin-top">
+						</div>
+						<h2>mr. madhukeshwar desai</h2>
+						<p>Madhukeshwar Desai is an Indian politician and great-grandson of former Prime Minister of India Morarji Desai. In 2013, he was appointed the National Vice President of the Bharatiya Janata Yuva Morcha, the youth wing of the Bharatiya Janata Party at 25, making him the youngest Vice President in the history of the party. Madhukeshwar setup the Mumbai Centre for International Arbitration (MCIA) in 2016 and currently serves as its CEO. An Advocate by profession, Madhukeshwar works with the Government of Maharashtra on the International Financial Services Centre being set up at the BKC, and is currently in the process of setting up the Mumbai Centre for International Arbitration as its CEO. MCIA is headquartered at Express Towers, Nariman Point.</p>
+					</div>
+				</div>
+				<div id="id99"  class="w3-modal" style="padding: 2%;">
+					<div class="w3-modal-content  w3-animate-zoom" style="max-width:600px">
+						<div onclick="document.getElementById('id99').style.display='none'" class="cancelx">&times;</div>
+						<div class="w3-center"><br>
+							<img src="img2020/panel/agupta.png" alt="Avatar" style="width:30%" class="w3-margin-top">
+						</div>
+						<h2>dr. anita gupta</h2>
+						<p>With Over 25 years + of professional experience in Management of Govt. of India programmes on Innovation, Entrepreneurship, Start-ups and Incubation coupled with research and academic experience at premier Technical institute she is currently associate Head ( Innovation and Entrepreneurship) at Department of Science and Technology, Govt. of India. It is the lead department in promoting Business Incubators and start-ups in the country through the National initiatives of Startup India.
+She has played a significant role in horizontal and vertical growth of innovation, entrepreneurship and start-ups in the country. She has been a lead catalyst in establishing over 130 technology business incubators at Institutions of excellence including IITs, IIMs, NITs, and leading private universities . Deeply involved in transforming the Indian innovation landscape by engaging new models of Public Private Partnerships with leading MNCs i.e Intel, Lockheed Martin, Boeing, Texas Instruments, Tatas and the Bennett Coleman and Co etc.bFew of her recent work are first of its kind initiatives in the country, which includes an exclusive program on empowering Women Entrepreneurs in technology, DST-Texas Instruments led India Innovation Challenge for engineering students, DST-Intel driven Plugin a first hardware product based incubation program etc. Apart from National outreach, contributed in fostering result oriented International linkages with countries like, USA, Switzerland, Russia, Rwanda, Israel etc. . Have lead several delegations of innovators and start-ups to USA and Russia.
+</p>
+					</div>
+				</div>
+				<div id="id930"  class="w3-modal" style="padding: 2%;">
+					<div class="w3-modal-content  w3-animate-zoom" style="max-width:600px">
+						<div onclick="document.getElementById('id930').style.display='none'" class="cancelx">&times;</div>
+						<div class="w3-center"><br>
+							<img src="img2020/speaker/hemrajani.jpg" alt="Avatar" style="width:30%" class="w3-margin-top">
+						</div>
+						<h2>Ashish Hemrajani</h2>
+						<p>Ashish Hemrajani, CEO and co-founder of Bigtree Entertainment Private Limited. Bigtree Entertainment Pvt Ltd operates BookMyShow, India's largest online entertainment ticketing platform.</p>
+					</div>
+				</div>
+				<div id="id015"  class="w3-modal" style="padding: 2%;">
+					<div class="w3-modal-content  w3-animate-zoom" style="max-width:600px">
+						<div onclick="document.getElementById('id015').style.display='none'" class="cancelx">&times;</div>
+						<div class="w3-center"><br>
+							<img src="img/speakers/devang.png" alt="Avatar" style="width:30%;" class="w3-margin-top">
+						</div>
+						<h2>mr. devang dave</h2>
+						<p>Devang Dave is the National Technology head of BJP Youth Wing and Executive director of Navayuvak entrepreneurs. He has over 10 years of professional experience in the areas of IT, ITES, Social Media, Branding, Reputation Management and Technical consulting. He has been a pioneer in the successful execution of major social media campaigns across India. He has been leading and is a part of various popular campaigns in this field. He has also been key Poll Campaign Strategist for major political parties as well key reputed Politicians in India. He is currently the BJP Maharashtra, Social Media Head and National Technology Head for BJP youth wing. At the age of 27, he is the youngest person who is a Key Poll Campaign Strategist for major political parties. He has changed the face of Political Campaigns by using technology and social media. Accomplishments: 1. He created the YouTube channel of Our Honorable Prime Minister Shri Narendra Modi back in 2007. The channel now has over 6 Lakh subscribers. 2. He is also the creator of the facebook page of Our Honorable Prime Minister Shri Narendra Modi " I support Narendra Modi " which has over 1 Crore likes. 3. He is a Serial Entrepreneur, Running Two successful ventures - Social Central and The Fearless Indian 4. He is the National IT Head BJP's Youth Wing.</p>
+					</div>
+				</div>
+				<div id="id04"  class="w3-modal" style="padding: 2%;">
+					<div class="w3-modal-content  w3-animate-zoom" style="max-width:600px">
+						<div onclick="document.getElementById('id04').style.display='none'" class="cancelx">&times;</div>
+						<div class="w3-center"><br>
+							<img src="img/speakers/ada.jpg" alt="Avatar" style="width:30%" class="w3-margin-top">
+						</div>
+						<h2>prof. ada yonath</h2>
+						<p>Prof. Ada Yonath, director of the Helen and Milton A. Kimmelman Center for Biomolecular Structure and Assembly of the Weizmann Institute of Science. She was awarded the Nobel Prize in Chemistry, in 2009, for her studies on the structure and function of the ribosome, becoming the first woman from the Middle East to win a Nobel Prize in the sciences, becoming the first Israeli woman to win the Nobel Prize out of ten Israeli Nobel laureates, the first woman from the Middle East to win a Nobel prize in the sciences,and the first woman in 45 years to win the Nobel Prize for Chemistry.Yonath is a member of the United States National Academy of Sciences; the American Academy of Arts and Sciences; the Israel Academy of Sciences and Humanities; the European Academy of Sciences and Art and the European Molecular Biology Organization.</p>
+					</div>
+				</div>
+				<div id="id010"  class="w3-modal" style="padding: 2%;">
+					<div class="w3-modal-content  w3-animate-zoom" style="max-width:600px">
+						<div onclick="document.getElementById('id08').style.display='none'" class="cancelx">&times;</div>
+						<div class="w3-center"><br>
+							<img src="img/speakers/paula.jpg" alt="Avatar" style="width:30%" class="w3-margin-top">
+						</div>
+						<h2>ms. paula mariwala</h2>
+						<p>An alumnus of Stanford University, Paula Mariwala is Managing Director of Seedfund Advisors, a venture capital firm which invests in early-stage companies in India, and Co-Founder & President of Stanford Angels & Entrepreneurs India. She is also Promoter Director of Hinditron Group of Companies, one of India's oldest technology companies.
+
+						Paula brings over 20-years of entrepreneurial and operational experience with technology companies in the USA and in India and more than 10 years of early-stage investing. In her role as Managing Director since inception in 2006, Paula has been actively involved with the entrepreneurial ecosystem in India to source, evaluate and mentor start-up companies. Seedfund has a portfolio of over 30 early-stage companies across sectors, where she has led investments in education, healthcare, deep technology and rural/social impact sectors.
+
+						Paula is actively engaged in the entrepreneurship through her association with professional bodies like The Indus Entrepreneur TiE (Charter Member), TiE Stree Shakti (Core Team), Indian Merchants Chamber(Chair/Managing Committee), IEEE (Life Member), Computer Society of India, Stanford University Alumni Association, Dell Women's Entrepreneurship Network and is a frequent speaker and judge at entrepreneurship events.
+
+						Paula holds an MS in Applied Physics from Stanford University, USA and BSc (Hons) in Physics from St. Xavier's College, Mumbai. She is the Co-President of Stanford University Alumni Association India, Member on the Board of Advisors of St. Xavier's College and Member of the Governing Board of K.J. Somaiya College of Engineering and is involved in various capacities with many academic institutions and technology incubators.</p>
+					</div>
+				</div>
+				<div id="id09"  class="w3-modal" style="padding: 2%;">
+					<div class="w3-modal-content  w3-animate-zoom" style="max-width:600px">
+						<div onclick="document.getElementById('id09').style.display='none'" class="cancelx">&times;</div>
+						<div class="w3-center"><br>
+							<img src="img/speakers/ananda.jpg" alt="Avatar" style="width:30%" class="w3-margin-top">
+						</div>
+						<h2>mrs. ananda shankar jayant</h2>
+						<p>Dr. Ananda Shankar Jayant, inhabits the worlds of administration, academics, and arts, straddling them with equal ease. Celebrated as one of India's most eminent classical dancer, choreographer and scholar, Ananda's artistic body of work spans mythologies and abstraction, historical chronicles and women studies, poetry, abstraction, philosophy and humour.
+
+						Ananda was conferred the "Padma Shri" in 2007 and the Sangeet Natak Akademi Puraskar for Bharatanatyam in 2009. Harnessing Technology for Arts, Ananda has conceptualized and launched Natyarambha, a first of its kind digital arts initiative - a Bharatanatyam practice app that connects tradition to technology. </p>
+					</div>
+				</div>
+				<div id="id010"  class="w3-modal" style="padding: 2%;">
+					<div class="w3-modal-content  w3-animate-zoom" style="max-width:600px">
+						<div onclick="document.getElementById('id010').style.display='none'" class="cancelx">&times;</div>
+						<div class="w3-center"><br>
+							<img src="img/speakers/akash.jpg" alt="Avatar" style="width:30%" class="w3-margin-top">
+						</div>
+						<h2>mr. akash Manoj</h2>
+						<p>Akash Manoj has done a research titled "Non-invasive Self Detection of Asymptomatic Myocardial Infarction using BioElectrics". He is presently studying in Class 11 at The Ashok Leyland School. Akash was awarded a Gold medal for National Child Award for Exceptional Achievement 2017 by President Ram Nath Kovind. Moreover, he was also awarded by President Pranab Mukherjee in March 2017 for his research. Akash believes that this device can be used for the greater good by saving many lives, especially of those living in the rural areas who do not have easy access to a hospital.
+
+						He has already filed for the patent since he wants the Indian government to use the project for the public good instead of selling it to a private firm. Akash wants to pursue cardiology and study in the All India Institute of Medical Sciences in Delhi in the future.</p>
+					</div>
+				</div>
+				<div id="id011"  class="w3-modal" style="padding: 2%;">
+					<div class="w3-modal-content  w3-animate-zoom" style="max-width:600px">
+						<div onclick="document.getElementById('id011').style.display='none'" class="cancelx">&times;</div>
+						<div class="w3-center"><br>
+							<img src="img/speakers/sambaji.jpg" alt="Avatar" style="width:30%" class="w3-margin-top">
+						</div>
+						<h2>mr. sambhaji patil</h2>
+						<p>Sambhaji Patil Nilangekar is a member of 13th  Maharashtra Legislative Assembly of Maharashtra and represents Nilanga (Vidhan Sabha Constituency). He is a member of the Bharatiya Janata Party (BJP) & RSS and also the General Secretary of the Maharashtra State Unit of the BJP. He is also Gradian minister or district in-charge minister of Latur. He is the cabinet Minister of Maharashtra Labour, Skill Development, Earthquake Rehabilitation & Ex-Servicemen Welfare since 8 July 2016.</p>
+					</div>
+				</div>
+				<div id="id012"  class="w3-modal" style="padding: 2%;">
+					<div class="w3-modal-content  w3-animate-zoom" style="max-width:600px">
+						<div onclick="document.getElementById('id012').style.display='none'" class="cancelx">&times;</div>
+						<div class="w3-center"><br>
+							<img src="img/speakers/madhukeshwar.jpg" alt="Avatar" style="width:30%" class="w3-margin-top">
+						</div>
+						<h2>mr. madhukeshwar desai</h2>
+						<p>Madhukeshwar Desai is an Indian politician and great-grandson of former Prime Minister of India Morarji Desai. In 2013, he was appointed the National Vice President of the Bharatiya Janata Yuva Morcha, the youth wing of the Bharatiya Janata Party at 25, making him the youngest Vice President in the history of the party. Madhukeshwar setup the Mumbai Centre for International Arbitration (MCIA) in 2016 and currently serves as its CEO. An Advocate by profession, Madhukeshwar works with the Government of Maharashtra on the International Financial Services Centre being set up at the BKC, and is currently in the process of setting up the Mumbai Centre for International Arbitration as its CEO. MCIA is headquartered at Express Towers, Nariman Point.</p>
+					</div>
+				</div>
+				<div id="id013"  class="w3-modal" style="padding: 2%;">
+					<div class="w3-modal-content  w3-animate-zoom" style="max-width:600px">
+						<div onclick="document.getElementById('id013').style.display='none'" class="cancelx">&times;</div>
+						<div class="w3-center"><br>
+							<img src="img/kunal_kapoor.jpg" alt="Avatar" style="width:30%" class="w3-margin-top">
+						</div>
+						<h2>mr. kunal kapoor</h2>
+						<p>Gaurav Mishra is the Managing Director of Navayuvak entrepreneurs. He started his first venture at the age of 16. Since then he is passionately working towards the development of the startup ecosystem by helping fellow entrepreneurs and creating an impact by his talks. He has been Awarded the Karmaveer Chakra, Instituted by UN and iCongo for his Tremendous Passion and Work towards Entrepreneurship from the start of his Entrepreneurial Journey, 8 years back. He has already successfully inspired 3000 students to initiate their own startup.</p>
+					</div>
+				</div>
+				<div id="id0"  class="w3-modal" style="padding: 2%;">
+					<div class="w3-modal-content  w3-animate-zoom" style="max-width:600px">
+						<div onclick="document.getElementById('id90').style.display='none'" class="cancelx">&times;</div>
+						<div class="w3-center"><br>
+							<img src="img/speakers/inmoov.png" alt="Avatar" style="width:35%" class="w3-margin-top">
+						</div>
+						<h2>Robyn Inmoov</h2>
+						<p>Robyn Inmoov, a robot which moves and speaks much like a human, a computer controlling software as well as hardware. As Markus, the maker of Robyn Inmoov says, it's about learning from mistakes or lack of knowledge of how things work. It's a part of the process of making and it can be frustrating and costly but that's the way it is.</p>
+					</div>
+				</div>
+				<div id="id1"  class="w3-modal" style="padding: 2%;">
+					<div class="w3-modal-content  w3-animate-zoom" style="max-width:600px">
+						<div onclick="document.getElementById('id91').style.display='none'" class="cancelx">&times;</div>
+						<div class="w3-center"><br>
+							<img src="img/speakers/raghuraman.png" alt="Avatar" style="width:35%; height: 200px" class="w3-margin-top">
+						</div>
+						<h2>capt. raghu raman</h2>
+						<p>Raghu Raman has possibly one of the most unique career profiles spanning over 25 years. He spent eleven years as an officer in the Indian Armed Forces, followed by another eleven years in the corporate sector before joining the Government as CEO of the National Intelligence Grid. Raghu started his career with the Indian Army. During his stint, he was in active combat in Punjab battling terrorists and in Siachen Glacier facing Pakistani troops. He has served as a UN peacekeeper, as well as been an instructor teaching leadership and strategy to officers at the prestigious School of Armoured Warfare.  After his five year stint as the founding CEO of NATGRID, Raman joined Reliance Industries as Group President, Risk, Security & New Ventures. Raghu is a Distinguished Fellow at the Observer Research Foundation, a frequent guest faculty in business schools, keynote speaker and columnist on National Security Strategy and Leadership in leading publications.</p>
+					</div>
+				</div>
+				<div id="id2"  class="w3-modal" style="padding: 2%;">
+					<div class="w3-modal-content  w3-animate-zoom" style="max-width:600px">
+						<div onclick="document.getElementById('id92').style.display='none'" class="cancelx">&times;</div>
+						<div class="w3-center"><br>
+							<img src="img/speakers/yash%20raj.png" alt="Avatar" style="width:35%" class="w3-margin-top">
+						</div>
+						<h2>yashraj bhardwaj</h2>
+						<p>Yashraj is 18 years old and Co-Founder of Zenith Vipers Group. He own 22 Research Projects and 7 patent applications that he has filed in a team. He is also the recipients of Karmaveer Chakra Award 2016 and have also been named amongst top 10 young entrepreneurs of 2016 across the globe by by success magazine. He is finalist of SF fellowship worth $250000 and winners of $100000. He is also proud nominee of Padma Shri 2018, one of the highest civilian award in India. Also winner of many international and national awards. Yashraj resides in Delhi and is very closely connected with the latest in technology and innovation around the world, with very close association with innovation powerhouses like Silicon Valley giants, TED, Venture Firms and Technology Clusters around the world. He is forbes 30 Under 30 asia 2018.</p>
+					</div>
+				</div> -->
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-111392550-2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-111392550-2');
+</script>
+<!-- Global site tag (gtag.js) - Google Ads: 679413035 -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-679413035"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'AW-679413035');
+</script>
+<!-- Event snippet for pv conversion page -->
+<script>
+  gtag('event', 'conversion', {'send_to': 'AW-679413035/GT4bCID47rgBEKuK_MMC'});
+</script>
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "ExhibitionEvent",
+  "name": "Maker Mela",
+  "image": "http://makermela.com/cover/makermela_cover.jpg", 
+  "url": "http://makermela.com",
+  "description": "Maker Mela is the premier event for grassroot innovations in India. It is the celebration of arts, crafts, engineering, science, the Do-It-Yourself (DIY) mindset, and the Maker Movement. It's a platform for like-minded folks who bring to life a diverse range of raw, unique and unconventional ideas.",
+  "startDate": "2020-01-09T10:00",
+  "endDate": "2020-01-11T17:00",
+  "location": {
+    "@type": "Place",
+    "name": "Maker Mela",
+    "sameAs": "http://makermela.com/",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Somaiya Vidyavihar, ",
+      "addressLocality": "Vidyavihar",
+      "addressRegion": "Mumbai",
+      "postalCode": "400077"
+    }
+  },
+  "offers": {
+    "@type": "Offer",
+    "url": "https://www.eventbrite.com/e/maker-mela-tickets-74091310103"
+  }
+}
+ </script>
+</body>
+
+<!-- Mirrored from makermela.com/ by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 17 Apr 2020 15:12:55 GMT -->
+</html>
