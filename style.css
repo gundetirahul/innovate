@@ -218,7 +218,7 @@ h1{
 		justify-content: space-around;
 	}
 	.benefitBox{
-		width: 50%;
+		width: 80%;
 		text-align: center;
 		margin: .6em; /* important */
 		padding: .6em;
@@ -230,7 +230,7 @@ h1{
 		text-align: center;
 		font-family:  'Open Sans', sans-serif;
 		color:#666;
-		font-size: 12px;
+		font-size: 16px;
 	}
 	.benefitsTitle{
 		text-align: center;
@@ -274,7 +274,7 @@ h1{
 		text-align: center;
 		font-family:  'Open Sans', sans-serif;
 		color:#666;
-		font-size: 12px;
+		font-size: 16px;
 	}
 	.benefitsTitle{
 		text-align: center;
@@ -947,7 +947,7 @@ h1{
 		flex-direction: column;*/
 	}
 		.partnerBox > img {
-	 height:20vh;
+	 height:18vh;
 	}
 		#partnerBody{
 		flex-direction:row;
