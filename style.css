@@ -491,7 +491,7 @@ h1{
 		order: 2;
 	}
 	.maprscontainer{
-		width: 80%;
+		/*! width: 80%; */
 		margin-right: 0;
 	}
 	.scheduleContainer > p {
